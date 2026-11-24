@@ -605,6 +605,11 @@ dialog{border:0;padding:0;color:var(--c-ink-700)}
 .hero .metaline .mod-name + span::before{margin-left:0}
 @media (max-width:959px){.hero .metaline.mods-line > span{display:block}.hero .metaline.mods-line span+span::before{content:none}}
 .pac-photo{align-self:start}
+/* Desktop: a foto começa na altura do título e termina antes da frase em negrito */
+@media (min-width:960px){
+  .pac-grid{grid-template-areas:"eye ." "h2 photo" "list photo" "sub ." "quote quote"}
+  .pac-photo{align-self:stretch;aspect-ratio:auto;min-height:320px;margin-top:var(--sp-3)}
+}
 .dep-card .todo{font-size:inherit}
 
 /* Depoimentos em carrossel */
@@ -1297,6 +1302,11 @@ const FOTOS = {
    Ex. {arquivo:"turma-1.jpg"}
    Use só fotos com autorização dos alunos. Lista vazia = no site a seção não aparece. */
 const TURMAS = [
+  {arquivo:"TM-T1.jpeg"},
+  {arquivo:"TM-T2.jpeg"},
+  {arquivo:"TM-T3.jpeg"},
+  {arquivo:"TM-T4.jpeg"},
+  {arquivo:"TM-T5.JPG"}
 ];
 /* No site publicado (github.io) os espaços sem foto somem. Na prévia aparecem os quadros com o código */
 const AO_VIVO = /github\.io$/.test(location.hostname);
