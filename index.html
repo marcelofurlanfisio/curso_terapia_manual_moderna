@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terapia Manual Moderna · Formação presencial · Prof. Marcelo Furlan</title>
+<meta name="description" content="Formação presencial em terapia manual articular para fisioterapeutas e estudantes, em dois módulos (Coluna Vertebral e Membros e ATM), com revisão em laboratório de anatomia e prática desde a primeira hora.">
+<meta property="og:title" content="Terapia Manual Moderna · Formação com o Prof. Marcelo Furlan">
+<meta property="og:description" content="Saiba o que fazer quando a técnica de sempre não funciona. Dois módulos presenciais em Campinas.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Tokens do Marcelo Furlan Design System (registro editorial, com bloco profundo) */
+:root{
+  --c-navy-900:#08161f;--c-navy-800:#0e2433;--c-navy-700:#143247;--c-navy-200:#a9c2d2;--c-navy-100:#dce7ed;
+  --c-teal-300:#5fbdb6;--c-teal-500:#14938f;
+  --c-cream-50:#fcf9f3;--c-cream-100:#f6f0e4;--c-cream-200:#ede3d0;--c-cream-500:#968566;
+  --c-clay-700:#8a4526;--c-clay-600:#a9552f;--c-clay-500:#c2683a;--c-clay-100:#f4e0d4;
+  --c-ink-700:#33414c;--c-ink-500:#5a6b78;--c-white:#fff;
+  --c-success:#2e7d5b;--c-success-100:#e4f0ea;--c-success-700:#256a4c;--c-danger:#b23a2f;--c-danger-100:#f7e3e1;
+
+  --surface-page:var(--c-cream-50);--surface-subtle:var(--c-cream-100);--surface-card:var(--c-white);
+  --surface-accent:var(--c-clay-100);--surface-accent-solid:var(--c-clay-600);
+  --text-heading:var(--c-navy-900);--text-body:var(--c-ink-700);--text-muted:var(--c-clay-700);
+  --text-on-accent:var(--c-cream-50);--text-accent:var(--c-clay-700);--text-link:var(--c-clay-700);--text-link-hover:var(--c-navy-900);
+  --border-hairline:var(--c-cream-200);--border-default:var(--c-cream-500);--border-accent:var(--c-clay-600);
+  --focus-ring:var(--c-clay-500);
+
+  --font-display:"Newsreader",Georgia,"Times New Roman",serif;
+  --font-ui:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  --font-data:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+
+  --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:20px;--sp-6:24px;--sp-7:32px;--sp-8:40px;--sp-9:48px;--sp-11:64px;--sp-12:80px;--sp-13:104px;
+  --page-margin:24px;--page-margin-lg:64px;
+  --radius-sm:2px;--radius-md:4px;--radius-lg:8px;--radius-xl:14px;--radius-pill:999px;
+  --bw-hairline:1px;--bw-default:1.5px;--bw-rule:3px;--bw-marker:6px;
+  --fs-display-2:58px;--fs-h2:36px;--fs-h3:22px;--fs-body-lg:19px;--fs-body:17px;--fs-body-sm:15px;--fs-label:13px;--fs-micro:11px;
+  --ls-display:-0.02em;--ls-heading:-0.01em;--ls-eyebrow:0.14em;--ls-mono:0.04em;
+  --measure:64ch;--measure-tight:44ch;
+  --shadow-xs:0 1px 2px rgba(16,24,32,.06);--shadow-sm:0 2px 6px rgba(16,24,32,.07);--shadow-md:0 10px 30px rgba(16,24,32,.10);
+  --dur-fast:120ms;--dur-base:200ms;--ease-standard:cubic-bezier(.32,.72,.32,1);--ease-out:cubic-bezier(.16,1,.3,1);
+}
+@media (prefers-reduced-motion:reduce){:root{--dur-fast:1ms;--dur-base:1ms}}
+.register-deep{
+  --surface-page:var(--c-navy-800);--surface-subtle:var(--c-navy-700);--surface-card:var(--c-navy-700);
+  --text-heading:var(--c-cream-50);--text-body:var(--c-navy-100);--text-muted:var(--c-navy-200);
+  --text-accent:var(--c-teal-300);--text-link:var(--c-teal-300);--text-link-hover:var(--c-white);
+  --border-hairline:rgba(255,255,255,.12);--border-default:rgba(255,255,255,.28);--focus-ring:var(--c-teal-500);
+  --surface-accent:var(--c-navy-700);--border-accent:var(--c-teal-300);
+  background:var(--surface-page);color:var(--text-body);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;font-family:var(--font-ui);font-size:var(--fs-body);line-height:1.6;color:var(--text-body);background:var(--surface-page);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--font-display);color:var(--text-heading);margin:0;font-weight:600;letter-spacing:var(--ls-heading);line-height:1.18;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+ul{margin:0;padding:0;list-style:none}
+a{color:var(--text-link);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;transition:color var(--dur-fast) var(--ease-standard)}
+a:hover{color:var(--text-link-hover);text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
+strong{color:var(--text-heading);font-weight:600}
+.wrap{max-width:1200px;margin:0 auto;padding:0 var(--page-margin)}
+@media (min-width:900px){.wrap{padding:0 var(--page-margin-lg)}}
+.narrow{max-width:760px}
+
+/* Componentes do sistema */
+.eyebrow{font-size:var(--fs-label);font-weight:600;letter-spacing:var(--ls-eyebrow);text-transform:uppercase;color:var(--text-accent)}
+.lockup-name{font-family:var(--font-display);font-weight:500;letter-spacing:var(--ls-display);line-height:1.02;color:var(--text-heading)}
+.lockup-role{font-weight:600;letter-spacing:var(--ls-eyebrow);text-transform:uppercase;color:var(--text-accent)}
+.lockup.sm .lockup-name{font-size:19px}.lockup.sm .lockup-role{font-size:9px;margin-top:5px}
+.lockup.md .lockup-name{font-size:28px}.lockup.md .lockup-role{font-size:11px;margin-top:7px}
+.metaline{font-family:var(--font-data);font-size:var(--fs-label);letter-spacing:var(--ls-mono);color:var(--text-muted);display:flex;flex-wrap:wrap;gap:var(--sp-2)}
+.metaline span+span::before{content:"·";margin-right:var(--sp-2)}
+.rule{width:56px;height:var(--bw-rule);background:var(--surface-accent-solid);margin:var(--sp-6) 0}
+.register-deep .rule{background:var(--c-teal-300)}
+
+.btn{font-family:var(--font-ui);font-weight:600;letter-spacing:.01em;display:inline-flex;align-items:center;justify-content:center;gap:var(--sp-2);border:none;border-radius:var(--radius-md);cursor:pointer;text-decoration:none;line-height:1.1;text-align:center;transition:background-color var(--dur-fast) var(--ease-standard),transform var(--dur-fast) var(--ease-standard),box-shadow var(--dur-fast) var(--ease-standard)}
+.btn:hover{text-decoration:none}
+.btn-primary{background:var(--c-clay-600);color:var(--c-cream-50);box-shadow:0 6px 16px rgba(169,85,47,.28)}
+.btn-primary:hover{background:var(--c-clay-700);color:var(--c-cream-50);transform:translateY(-1px)}
+.btn-primary:active{background:#733a20;transform:translateY(1px)}
+.btn-secondary{background:transparent;color:var(--text-accent);box-shadow:inset 0 0 0 var(--bw-default) var(--border-accent)}
+.btn-secondary:hover{background:var(--surface-accent);color:var(--text-accent)}
+.btn-sm{font-size:var(--fs-label);padding:9px 14px}
+.btn-lg{font-size:var(--fs-body);padding:18px 30px}
+.btn-xl{font-size:var(--fs-body-lg);padding:20px 34px}
+.btn .arrow{transition:transform var(--dur-fast) var(--ease-standard)}
+.btn:hover .arrow{transform:translateX(3px)}
+.cta-row{display:flex;flex-wrap:wrap;gap:var(--sp-3);align-items:center}
+.cta-note{font-size:var(--fs-label);color:var(--text-muted);margin-top:var(--sp-3);display:flex;align-items:center;gap:var(--sp-2)}
+.cta-note .dot{width:8px;height:8px;border-radius:50%;background:var(--c-clay-500);flex:0 0 auto;animation:pulse 1.8s infinite}
+.register-deep .cta-note .dot{background:var(--c-teal-300)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+@media (max-width:560px){.cta-row .btn{width:100%}}
+
+.card{background:var(--surface-card);border-radius:var(--radius-xl);box-shadow:var(--shadow-sm);padding:var(--sp-7)}
+@media (max-width:560px){.card{padding:var(--sp-6) var(--sp-5)}}
+
+/* Pendências para preencher (aparecem destacadas até você preencher) */
+.todo{background:#fff1bf;color:#5c4700;outline:1px dashed #b38600;outline-offset:1px;border-radius:2px;padding:0 4px;font-style:normal}
+.cfg-note{display:none;margin-top:var(--sp-3);font-family:var(--font-data);font-size:var(--fs-micro);letter-spacing:var(--ls-mono)}
+.no-link .cfg-note{display:block}
+.cfg-note span{background:#fff1bf;color:#5c4700;outline:1px dashed #b38600;padding:2px 6px;border-radius:2px}
+
+/* Espaços para fotos */
+.foto{position:relative;margin:0;border-radius:var(--radius-lg);overflow:hidden;background:repeating-linear-gradient(135deg,var(--c-cream-100) 0 14px,var(--c-cream-200) 14px 15px);aspect-ratio:var(--ar,4/3)}
+.foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.foto .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:var(--sp-4);text-align:center;box-shadow:inset 0 0 0 1.5px var(--c-cream-500);border-radius:var(--radius-lg)}
+.foto .ph b{font-family:var(--font-data);font-size:var(--fs-label);letter-spacing:var(--ls-mono);color:var(--c-clay-700);background:var(--c-cream-50);padding:3px 8px;border-radius:var(--radius-sm)}
+.foto .ph i{font-style:normal;font-size:var(--fs-label);color:var(--c-ink-700);max-width:30ch;line-height:1.4;background:rgba(252,249,243,.85);padding:2px 6px;border-radius:2px}
+.foto .ph small{font-family:var(--font-data);font-size:var(--fs-micro);color:var(--c-ink-500);background:rgba(252,249,243,.85);padding:1px 6px}
+.foto.filled .ph{display:none}
+.foto figcaption{position:absolute;left:12px;bottom:12px;font-size:var(--fs-micro);font-weight:600;letter-spacing:var(--ls-eyebrow);text-transform:uppercase;color:var(--c-cream-50);background:rgba(8,22,31,.62);padding:5px 9px;border-radius:var(--radius-sm)}
+.foto:not(.filled) figcaption{display:none}
+
+/* Barra superior */
+.topbar{position:sticky;top:0;z-index:20;height:64px;display:flex;align-items:center;background:var(--surface-page);border-bottom:var(--bw-hairline) solid #dccdb2;transition:background-color var(--dur-base) var(--ease-standard)}
+.topbar.scrolled{background:rgba(252,249,243,.9);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.topbar .wrap{width:100%;display:flex;align-items:center;justify-content:space-between;gap:var(--sp-4)}
+.topbar nav{display:none;gap:var(--sp-6);font-size:var(--fs-label);font-weight:500}
+.topbar nav a{color:var(--text-body);text-decoration:none}
+.topbar nav a:hover{color:var(--text-accent)}
+@media (min-width:1020px){.topbar nav{display:flex}}
+.topbar-right{display:flex;align-items:center;gap:var(--sp-6)}
+
+/* Hero */
+.hero{padding:var(--sp-11) 0 var(--sp-12)}
+.hero-grid{display:grid;gap:var(--sp-9);align-items:center}
+@media (min-width:960px){.hero-grid{grid-template-columns:7fr 5fr;gap:var(--sp-11)}}
+.hero h1{font-size:clamp(38px,5.4vw,var(--fs-display-2));font-weight:500;line-height:1.08;letter-spacing:var(--ls-display);margin-top:var(--sp-4)}
+.hero h1 em{font-style:italic;color:var(--text-accent)}
+.lead{font-size:var(--fs-body-lg);max-width:52ch;color:var(--text-body)}
+.hero .cta-row{margin-top:var(--sp-7)}
+.hero .metaline{margin-top:var(--sp-6)}
+.hero-photo{position:relative}
+.hero-photo .tag{position:absolute;right:-8px;bottom:24px;background:var(--surface-card);box-shadow:var(--shadow-md);border-radius:var(--radius-lg);padding:var(--sp-4) var(--sp-5);max-width:220px}
+.hero-photo .tag b{display:block;font-family:var(--font-display);font-size:28px;font-weight:600;color:var(--text-heading);line-height:1}
+.hero-photo .tag span{display:block;font-size:var(--fs-label);color:var(--text-body);margin-top:4px;line-height:1.35}
+@media (max-width:560px){.hero-photo .tag{right:8px;bottom:12px;padding:var(--sp-3) var(--sp-4)}}
+
+/* Faixa de fatos */
+.facts{border-top:var(--bw-hairline) solid var(--border-hairline);border-bottom:var(--bw-hairline) solid var(--border-hairline);background:var(--surface-subtle)}
+.facts ul{display:grid;grid-template-columns:repeat(2,1fr);gap:0}
+@media (min-width:900px){.facts ul{grid-template-columns:repeat(5,1fr)}}
+.facts li{padding:var(--sp-5) var(--sp-4);display:flex;flex-direction:column;gap:2px;border-right:var(--bw-hairline) solid var(--border-hairline)}
+.facts li:last-child{border-right:0}
+@media (max-width:899px){.facts li:nth-child(2n){border-right:0}.facts li{border-bottom:var(--bw-hairline) solid var(--border-hairline)}.facts li:last-child{grid-column:1/-1;border-bottom:0}}
+.facts b{font-family:var(--font-display);font-size:22px;font-weight:600;color:var(--text-heading);line-height:1.15}
+.facts span{font-size:var(--fs-label);color:var(--text-body)}
+
+/* Seções */
+.sec{padding:var(--sp-13) 0}
+@media (max-width:700px){.sec{padding:var(--sp-11) 0}}
+.sec.alt{background:var(--surface-subtle)}
+.sec-head h2{font-size:clamp(28px,3.6vw,var(--fs-h2));margin-top:var(--sp-3);max-width:24ch}
+.sec-head.center{text-align:center;display:flex;flex-direction:column;align-items:center}
+.sec-head.center h2{max-width:26ch}
+.sec-head.center .rule{margin-left:auto;margin-right:auto}
+.sec-head p{font-size:var(--fs-body-lg);max-width:60ch}
+.prose p+p{margin-top:var(--sp-4)}
+.prose p{font-size:var(--fs-body-lg);max-width:var(--measure)}
+.big-quote{font-family:var(--font-display);font-size:clamp(24px,3vw,32px);line-height:1.3;color:var(--text-heading);font-weight:500;max-width:30ch;border-left:var(--bw-marker) solid var(--c-clay-600);padding-left:var(--sp-6);margin-top:var(--sp-8)}
+.register-deep .big-quote{border-left-color:var(--c-teal-300)}
+.inline-cta{margin-top:var(--sp-9)}
+
+/* Dor */
+.pain-grid{display:grid;gap:var(--sp-9);margin-top:var(--sp-8)}
+@media (min-width:960px){.pain-grid{grid-template-columns:1fr 1fr;gap:var(--sp-11);align-items:start}}
+.pain-list{display:grid;gap:var(--sp-3)}
+.pain-list li{display:flex;gap:var(--sp-4);align-items:flex-start;background:var(--surface-card);border-radius:var(--radius-lg);padding:var(--sp-4) var(--sp-5);box-shadow:var(--shadow-xs);font-size:var(--fs-body);color:var(--text-heading)}
+.pain-list svg{flex:0 0 auto;margin-top:3px;color:var(--c-clay-600)}
+
+/* Antes e depois */
+.ba{display:grid;gap:var(--sp-4);margin-top:var(--sp-8)}
+.ba-head,.ba-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-4)}
+.ba-head div{font-size:var(--fs-label);font-weight:600;letter-spacing:var(--ls-eyebrow);text-transform:uppercase;padding:0 var(--sp-5)}
+.ba-head .b{color:var(--text-muted)}.ba-head .a{color:var(--text-accent)}
+.ba-row div{padding:var(--sp-4) var(--sp-5);border-radius:var(--radius-lg);font-size:var(--fs-body-sm);line-height:1.5}
+.ba-row .b{background:rgba(255,255,255,.04);color:var(--text-muted);box-shadow:inset 0 0 0 1px var(--border-hairline);text-decoration:line-through;text-decoration-color:rgba(169,194,210,.45)}
+.ba-row .a{background:var(--c-navy-700);color:var(--c-cream-50);box-shadow:inset 3px 0 0 var(--c-teal-300)}
+@media (max-width:620px){.ba-head .b{display:none}.ba-head{grid-template-columns:1fr}.ba-row{grid-template-columns:1fr;gap:var(--sp-2)}.ba-row{padding-bottom:var(--sp-3);border-bottom:1px solid var(--border-hairline)}}
+
+/* Passos */
+.steps{display:grid;gap:var(--sp-5);margin-top:var(--sp-9);counter-reset:s}
+@media (min-width:900px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{position:relative;background:var(--surface-card);border-radius:var(--radius-xl);padding:var(--sp-7);box-shadow:var(--shadow-sm);border-top:var(--bw-rule) solid var(--c-clay-600)}
+.step .n{font-family:var(--font-data);font-size:var(--fs-label);letter-spacing:var(--ls-mono);color:var(--text-accent)}
+.step h3{font-size:26px;margin-top:var(--sp-2)}
+.step p{margin-top:var(--sp-3);font-size:var(--fs-body-sm)}
+
+/* Grade de itens */
+.items{display:grid;gap:var(--sp-4);margin-top:var(--sp-8)}
+@media (min-width:700px){.items.c2{grid-template-columns:1fr 1fr}.items.c3{grid-template-columns:1fr 1fr}}
+@media (min-width:1000px){.items.c3{grid-template-columns:repeat(3,1fr)}}
+.item{background:var(--surface-card);border-radius:var(--radius-lg);padding:var(--sp-6);box-shadow:var(--shadow-xs);display:flex;gap:var(--sp-4);align-items:flex-start}
+.item .ic{flex:0 0 36px;height:36px;border-radius:var(--radius-md);background:var(--surface-accent);color:var(--text-accent);display:inline-flex;align-items:center;justify-content:center}
+.item h3{font-family:var(--font-ui);font-size:var(--fs-body);font-weight:600;letter-spacing:0;line-height:1.35}
+.item p{font-size:var(--fs-body-sm);margin-top:var(--sp-1)}
+.item .tag{display:inline-block;margin-top:var(--sp-2);font-family:var(--font-data);font-size:var(--fs-micro);letter-spacing:var(--ls-mono);color:var(--text-muted)}
+
+/* Módulos */
+.mods{display:grid;gap:var(--sp-5);margin-top:var(--sp-8)}
+@media (min-width:900px){.mods{grid-template-columns:1fr 1fr}}
+.mod{background:var(--surface-card);border-radius:var(--radius-xl);box-shadow:var(--shadow-sm);overflow:hidden;display:flex;flex-direction:column}
+.mod .foto{border-radius:0;--ar:16/9}
+.mod .foto .ph{border-radius:0}
+.mod-body{padding:var(--sp-7);display:flex;flex-direction:column;gap:var(--sp-4);flex:1}
+.mod-body h3{font-size:28px}
+.mod-body .metaline{margin-top:-4px}
+.mod-body ul{display:grid;gap:var(--sp-2)}
+.mod-body li{display:flex;gap:var(--sp-3);font-size:var(--fs-body-sm)}
+.mod-body li::before{content:"";flex:0 0 6px;height:6px;margin-top:9px;border-radius:50%;background:var(--c-clay-600)}
+.mod-body .btn{margin-top:auto;align-self:flex-start}
+
+/* Mosaico de fotos */
+.mosaic{display:grid;gap:var(--sp-4);margin-top:var(--sp-8);grid-template-columns:1fr 1fr}
+.mosaic .foto:first-child{grid-column:1/-1;--ar:16/9}
+@media (min-width:900px){.mosaic{grid-template-columns:2fr 1fr 1fr;grid-template-rows:auto auto}.mosaic .foto:first-child{grid-column:auto;grid-row:1/3;--ar:auto;aspect-ratio:auto;min-height:100%}.mosaic .foto{--ar:1/1}}
+.two-col{display:grid;gap:var(--sp-9);align-items:center}
+@media (min-width:960px){.two-col{grid-template-columns:1fr 1fr;gap:var(--sp-11)}}
+.checklist{display:grid;gap:var(--sp-3);margin-top:var(--sp-6)}
+.checklist li{display:flex;gap:var(--sp-3);align-items:flex-start;font-size:var(--fs-body)}
+.checklist svg{flex:0 0 auto;margin-top:4px;color:var(--c-success)}
+.register-deep .checklist svg{color:var(--c-teal-300)}
+
+/* Para quem é */
+.fit{display:grid;gap:var(--sp-5);margin-top:var(--sp-8)}
+@media (min-width:900px){.fit{grid-template-columns:3fr 2fr}}
+.fit .card h3{font-family:var(--font-ui);font-size:var(--fs-label);font-weight:600;letter-spacing:var(--ls-eyebrow);text-transform:uppercase}
+.fit .yes h3{color:var(--c-success-700)}
+.fit .no{background:transparent;box-shadow:inset 0 0 0 1px var(--border-default)}
+.fit .no h3{color:var(--c-danger)}
+.fit li{display:flex;gap:var(--sp-3);margin-top:var(--sp-4);font-size:var(--fs-body)}
+.fit li svg{flex:0 0 auto;margin-top:4px}
+.fit .yes svg{color:var(--c-success)}.fit .no svg{color:var(--c-danger)}
+
+/* Professor */
+.prof{display:grid;gap:var(--sp-9);align-items:center}
+@media (min-width:900px){.prof{grid-template-columns:5fr 7fr;gap:var(--sp-11)}}
+.prof .foto{--ar:4/5}
+.prof h2{font-size:clamp(30px,3.6vw,40px);margin-top:var(--sp-3)}
+.prof .prose p{font-size:var(--fs-body)}
+.creds{display:grid;gap:var(--sp-3);margin-top:var(--sp-6)}
+.creds li{display:flex;gap:var(--sp-3);font-size:var(--fs-body-sm)}
+.creds li::before{content:"";flex:0 0 14px;height:2px;margin-top:11px;background:var(--c-clay-600)}
+.stats{display:flex;flex-wrap:wrap;gap:var(--sp-8);margin-top:var(--sp-7);padding-top:var(--sp-6);border-top:1px solid var(--border-hairline)}
+.stats div b{display:block;font-family:var(--font-display);font-size:40px;font-weight:500;line-height:1;color:var(--text-heading)}
+.stats div span{font-size:var(--fs-label);color:var(--text-body)}
+
+/* Depoimentos */
+.quotes{display:grid;gap:var(--sp-5);margin-top:var(--sp-8)}
+@media (min-width:900px){.quotes{grid-template-columns:repeat(3,1fr)}}
+.quote{background:var(--surface-card);border-radius:var(--radius-xl);padding:var(--sp-7);box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:var(--sp-5)}
+.quote blockquote{margin:0;font-family:var(--font-display);font-size:20px;line-height:1.45;color:var(--text-heading)}
+.quote blockquote::before{content:"“";display:block;font-size:56px;line-height:.6;color:var(--c-clay-500);margin-bottom:var(--sp-2)}
+.quote .who{display:flex;gap:var(--sp-3);align-items:center;margin-top:auto}
+.quote .who .foto{width:48px;height:48px;aspect-ratio:1;border-radius:50%;flex:0 0 auto}
+.quote .who .foto .ph{border-radius:50%;padding:0}
+.quote .who .foto .ph b{font-size:9px;padding:1px 3px}
+.quote .who .foto .ph i,.quote .who .foto .ph small{display:none}
+.quote .who b{display:block;font-size:var(--fs-body-sm);color:var(--text-heading)}
+.quote .who span{font-size:var(--fs-label);color:var(--text-muted)}
+.gallery{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(240px,1fr);gap:var(--sp-4);overflow-x:auto;scroll-snap-type:x mandatory;margin-top:var(--sp-7);padding-bottom:var(--sp-3)}
+.gallery .foto{scroll-snap-align:start;--ar:4/5}
+
+/* Oferta */
+.offer-grid{display:grid;gap:var(--sp-9);margin-top:var(--sp-9);align-items:start}
+@media (min-width:960px){.offer-grid{grid-template-columns:6fr 5fr;gap:var(--sp-11)}}
+.stack{display:grid;gap:0}
+.stack li{display:flex;gap:var(--sp-4);align-items:flex-start;padding:var(--sp-4) 0;border-bottom:1px solid var(--border-hairline);font-size:var(--fs-body)}
+.stack li:first-child{padding-top:0}
+.stack svg{flex:0 0 auto;margin-top:4px;color:var(--c-teal-300)}
+.stack li b{color:var(--c-cream-50);font-weight:600}
+.stack small{display:block;font-size:var(--fs-label);color:var(--text-muted);margin-top:2px}
+.price-card{background:var(--c-cream-50);color:var(--c-ink-700);border-radius:var(--radius-xl);padding:var(--sp-8) var(--sp-7);box-shadow:0 18px 44px rgba(0,0,0,.28);--text-heading:var(--c-navy-900);--text-muted:var(--c-clay-700);--text-accent:var(--c-clay-700);--border-hairline:var(--c-cream-200);--text-link:var(--c-clay-700)}
+@media (max-width:560px){.price-card{padding:var(--sp-7) var(--sp-5)}}
+.price-card .eyebrow{color:var(--c-clay-700)}
+.price-card .badge-lote{display:inline-flex;align-items:center;gap:6px;font-size:var(--fs-micro);font-weight:600;letter-spacing:var(--ls-eyebrow);text-transform:uppercase;background:var(--c-clay-100);color:var(--c-clay-700);padding:5px 10px;border-radius:var(--radius-sm)}
+.price-old{font-family:var(--font-data);font-size:var(--fs-body-sm);color:var(--c-ink-500);text-decoration:line-through;margin-top:var(--sp-5)}
+.price{font-family:var(--font-display);font-size:clamp(44px,6vw,60px);font-weight:500;line-height:1;color:var(--c-navy-900);letter-spacing:var(--ls-display);margin-top:var(--sp-2)}
+.price-sub{font-size:var(--fs-body-sm);margin-top:var(--sp-2)}
+.price-card .btn{width:100%;margin-top:var(--sp-6)}
+.price-card .cta-note{justify-content:center;color:var(--c-clay-700)}
+.price-card .cta-note .dot{background:var(--c-clay-500)}
+.secure{display:grid;gap:var(--sp-2);margin-top:var(--sp-6);padding-top:var(--sp-5);border-top:1px solid var(--c-cream-200);font-size:var(--fs-label)}
+.secure li{display:flex;gap:var(--sp-2);align-items:flex-start}
+.secure svg{flex:0 0 auto;margin-top:2px;color:var(--c-success)}
+.lotes{display:grid;gap:var(--sp-2);margin-top:var(--sp-5)}
+.lotes li{display:flex;justify-content:space-between;gap:var(--sp-4);font-size:var(--fs-body-sm);padding:var(--sp-3) var(--sp-4);border-radius:var(--radius-md);background:var(--c-cream-100)}
+.lotes li.on{background:var(--c-clay-100);box-shadow:inset 0 0 0 1.5px var(--c-clay-600);font-weight:600;color:var(--c-navy-900)}
+.lotes li.off{color:var(--c-ink-500)}
+.lotes li span:last-child{font-family:var(--font-data)}
+.plans{display:grid;gap:var(--sp-4);margin-top:var(--sp-5)}
+.plan{border-radius:var(--radius-lg);padding:var(--sp-5);box-shadow:inset 0 0 0 1.5px var(--c-cream-200);position:relative}
+.plan.best{box-shadow:inset 0 0 0 2px var(--c-clay-600);background:#fff}
+.plan .flag{position:absolute;top:-11px;right:16px;font-size:var(--fs-micro);font-weight:600;letter-spacing:var(--ls-eyebrow);text-transform:uppercase;background:var(--c-clay-600);color:var(--c-cream-50);padding:4px 9px;border-radius:var(--radius-sm)}
+.plan h3{font-family:var(--font-ui);font-size:var(--fs-body);font-weight:600;letter-spacing:0}
+.plan .p{font-family:var(--font-display);font-size:34px;font-weight:500;color:var(--c-navy-900);line-height:1.05;margin-top:var(--sp-2)}
+.plan .s{font-size:var(--fs-label);margin-top:4px}
+.plan .btn{margin-top:var(--sp-4)}
+.offer-photos{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-3);margin-top:var(--sp-7)}
+.offer-photos .foto{--ar:1/1}
+
+/* Perguntas */
+.faq{margin-top:var(--sp-8);display:grid;gap:var(--sp-3)}
+.faq details{background:var(--surface-card);border-radius:var(--radius-lg);box-shadow:var(--shadow-xs)}
+.faq summary{list-style:none;cursor:pointer;padding:var(--sp-5) var(--sp-6);font-weight:600;color:var(--text-heading);display:flex;justify-content:space-between;gap:var(--sp-4);align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--font-data);font-size:22px;color:var(--text-accent);transition:transform var(--dur-base) var(--ease-standard)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 var(--sp-6) var(--sp-6);font-size:var(--fs-body-sm);max-width:70ch}
+
+/* Chamada final */
+.final{text-align:center;padding:var(--sp-13) 0}
+.final h2{font-size:clamp(32px,4.4vw,48px);font-weight:500;max-width:22ch;margin:var(--sp-3) auto 0}
+.final p{font-size:var(--fs-body-lg);max-width:56ch;margin:var(--sp-5) auto 0}
+.final .cta-row{justify-content:center;margin-top:var(--sp-8)}
+.final .cta-note{justify-content:center}
+
+/* Rodapé */
+footer{padding:var(--sp-9) 0 var(--sp-12)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:var(--sp-6);justify-content:space-between;align-items:flex-end}
+footer .metaline a{color:var(--text-link)}
+
+/* Barra fixa de inscrição no celular */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(14,36,51,.97);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:12px 16px calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;justify-content:space-between;gap:var(--sp-4);transform:translateY(110%);transition:transform var(--dur-base) var(--ease-out);box-shadow:0 -6px 20px rgba(0,0,0,.18)}
+.sticky-cta.show{transform:none}
+.sticky-cta .info{display:flex;flex-direction:column;min-width:0}
+.sticky-cta .info b{color:var(--c-cream-50);font-size:var(--fs-body-sm);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sticky-cta .info span{font-family:var(--font-data);font-size:var(--fs-micro);color:var(--c-teal-300);letter-spacing:var(--ls-mono)}
+.sticky-cta .btn{flex:0 0 auto}
+@media (min-width:900px){.sticky-cta{left:auto;right:24px;bottom:24px;border-radius:var(--radius-xl);max-width:460px;padding:14px 16px 14px 22px}}
+
+
+/* Hero com foto ao lado da introdução no celular */
+.hero{padding-bottom:var(--sp-9)}
+.lm-hero{row-gap:0;grid-template-columns:1fr;grid-template-areas:"top" "lead" "photo" "cta"}
+.h-top{grid-area:top}.h-lead{grid-area:lead}.h-photo{grid-area:photo}.h-cta{grid-area:cta}
+.h-cta .cta-row{margin-top:var(--sp-7)}.h-cta .metaline{margin-top:var(--sp-6)}
+@media (min-width:960px){.lm-hero{grid-template-columns:7fr 5fr;column-gap:var(--sp-11);grid-template-areas:"top photo" "lead photo" "cta photo";align-items:start}.h-photo{align-self:start}}
+@media (max-width:959px){.lm-hero{grid-template-columns:1fr 38%;column-gap:var(--sp-5);grid-template-areas:"top top" "lead photo" "cta photo";align-items:start}.h-photo .tag{display:none}.h-lead{font-size:var(--fs-body-sm);line-height:1.55}.h-photo .foto .ph i,.h-photo .foto .ph small{display:none}}
+
+/* Destaques em cartão, com ícones */
+.highlights{list-style:none;margin:0 0 -56px;padding:var(--sp-6) var(--sp-7);background:var(--surface-card);border-radius:var(--radius-xl);box-shadow:var(--shadow-md);display:grid;gap:var(--sp-5);position:relative;z-index:2}
+@media (min-width:860px){.highlights{grid-template-columns:repeat(3,1fr);gap:var(--sp-7);padding:var(--sp-7) var(--sp-8)}}
+@media (max-width:560px){.highlights{padding:var(--sp-6) var(--sp-5)}}
+.highlights li{display:flex;gap:var(--sp-4);align-items:center}
+.hi-ic{flex:0 0 52px;height:52px;border-radius:50%;background:var(--c-clay-100);color:var(--c-clay-700);display:inline-flex;align-items:center;justify-content:center}
+.hi-ic svg{width:28px;height:28px}
+.highlights li:nth-child(2) .hi-ic svg{width:36px;height:36px}
+.highlights b{display:block;font-family:var(--font-display);font-size:21px;font-weight:600;color:var(--text-heading);line-height:1.2}
+.highlights div span{display:block;font-size:var(--fs-label);color:var(--text-body);margin-top:2px}
+
+/* A verdade, com foto */
+.truth{padding-top:calc(var(--sp-13) + 56px)}
+.truth-grid{display:grid;gap:var(--sp-9);align-items:start}
+@media (min-width:960px){.truth-grid{grid-template-columns:7fr 5fr;gap:var(--sp-11)}}
+.truth h2{font-size:clamp(28px,3.6vw,var(--fs-h2));margin-top:var(--sp-3);max-width:24ch}
+.truth .myths{margin-top:var(--sp-6)}
+.truth .myths{gap:var(--sp-2)}
+.truth .myths span{background:rgba(255,255,255,.06);color:var(--c-navy-200);box-shadow:inset 0 0 0 1px rgba(255,255,255,.16);text-decoration-color:var(--c-clay-500);font-size:clamp(16px,1.5vw,18px);padding:6px 16px;text-decoration-thickness:1.5px}
+.truth-p{font-size:var(--fs-body-lg);max-width:60ch}
+.truth .big-quote{font-size:clamp(22px,2.6vw,30px)}
+.truth-quote{grid-column:1/-1;max-width:none;margin-top:0;font-style:italic}
+
+/* Método com título em uma linha e fotos nos cartões */
+.metodo-head h2{max-width:none;font-size:clamp(30px,3.1vw,42px)}
+.sec-head.center.metodo-head h2{max-width:none}
+.step.has-photo{overflow:hidden;padding-top:0}
+.step.has-photo .foto{margin:0 calc(-1*var(--sp-7)) var(--sp-5);border-radius:0}
+.step.has-photo .foto .ph{border-radius:0}
+
+/* Números do professor maiores */
+#professor .prof{align-items:start}
+#professor .stats{gap:var(--sp-11)}
+#professor .stats div b{font-size:clamp(52px,6vw,72px);letter-spacing:-0.02em}
+#professor .stats div span{font-size:var(--fs-body-sm)}
+.hero-photo .foto img{object-position:50% 20%}
+#professor .foto img{object-position:50% 30%}
+.myths{display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-7)}
+.myths span{font-family:var(--font-display);font-size:clamp(20px,2.4vw,26px);color:var(--c-ink-500);background:var(--surface-card);box-shadow:var(--shadow-xs);border-radius:var(--radius-pill);padding:10px 22px;text-decoration:line-through;text-decoration-color:var(--c-clay-600);text-decoration-thickness:2px}
+.mods.four{grid-template-columns:1fr}
+@media (min-width:700px){.mods.four{grid-template-columns:1fr 1fr}}
+.mods.four .mod-body{padding:var(--sp-6)}
+.mods.four h3{font-size:24px}
+/* Ajustes desta página */
+@media (min-width:900px){.facts ul{grid-template-columns:repeat(3,1fr)}}
+.offer-grid.top{margin-top:0}
+.offer-grid.top .stack{margin-top:var(--sp-8)}
+.fit{grid-template-columns:1fr !important}
+.fit .yes li:first-child{margin-top:0}
+.price-card .btn-xl{white-space:normal;line-height:1.25}
+.info-wa{font-size:var(--fs-body-sm);margin-top:var(--sp-5);padding-top:var(--sp-5);border-top:1px solid var(--c-cream-200)}
+
+/* Formulário da lista de espera (mesmo padrão da página de cadastro) */
+.form-card{max-width:820px;margin:var(--sp-11) auto 0;background:var(--c-cream-50);color:var(--c-ink-700);border-radius:var(--radius-xl);padding:var(--sp-9) var(--sp-8);box-shadow:0 18px 44px rgba(0,0,0,.28);
+  --surface-page:var(--c-cream-50);--surface-subtle:var(--c-cream-100);--surface-card:var(--c-white);--surface-accent:var(--c-clay-100);--surface-accent-solid:var(--c-clay-600);
+  --text-heading:var(--c-navy-900);--text-body:var(--c-ink-700);--text-muted:var(--c-clay-700);--text-accent:var(--c-clay-700);--text-link:var(--c-clay-700);--text-link-hover:var(--c-navy-900);
+  --border-hairline:var(--c-cream-200);--border-default:var(--c-cream-500);--border-accent:var(--c-clay-600);--focus-ring:var(--c-clay-500);scroll-margin-top:88px}
+@media (max-width:560px){.form-card{padding:var(--sp-7) var(--sp-5)}}
+.form-head h2{font-size:clamp(28px,3.6vw,var(--fs-h2));margin-top:var(--sp-3)}
+.form-head p{font-size:var(--fs-body-sm);margin-top:var(--sp-3);max-width:60ch}
+form{display:flex;flex-direction:column;gap:var(--sp-6);margin-top:var(--sp-7)}
+.row{display:grid;gap:var(--sp-6)}
+@media (min-width:620px){.row.two{grid-template-columns:1fr 1fr}.row.city{grid-template-columns:1fr 160px}}
+.field{display:flex;flex-direction:column;gap:var(--sp-2);min-width:0}
+.label{font-size:var(--fs-label);font-weight:600;color:var(--text-heading)}
+.label .opt{font-weight:400;color:var(--text-muted)}
+.input{width:100%;font-family:var(--font-ui);font-size:var(--fs-body-sm);color:var(--text-heading);background:var(--surface-card);border:var(--bw-default) solid var(--border-default);border-radius:var(--radius-md);padding:12px 14px;outline-color:var(--focus-ring)}
+textarea.input{resize:vertical;min-height:104px}
+select.input{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2333414c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");background-repeat:no-repeat;background-position:right 12px center;background-size:18px;padding-right:40px}
+.hint{font-size:var(--fs-body-sm);color:var(--text-body)}
+.err{font-size:var(--fs-micro);color:var(--c-danger);display:none}
+.invalid .input{border-color:var(--c-danger)}
+.invalid .err{display:block}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{padding:0;margin-bottom:var(--sp-3)}
+.checks{display:grid;gap:var(--sp-3)}
+@media (min-width:620px){.checks.cols{grid-template-columns:1fr 1fr;column-gap:var(--sp-6)}}
+.check{display:flex;gap:var(--sp-3);align-items:flex-start;cursor:pointer}
+.check input{appearance:none;-webkit-appearance:none;width:18px;height:18px;flex:0 0 auto;margin:2px 0 0;border-radius:var(--radius-sm);border:var(--bw-default) solid var(--border-default);background:var(--surface-card) center/14px no-repeat;cursor:pointer}
+.check input:checked{background-color:var(--surface-accent-solid);border-color:var(--border-accent);background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>")}
+.check span{font-size:var(--fs-body-sm);color:var(--text-heading);line-height:1.45}
+.check small{display:block;font-size:var(--fs-micro);color:var(--text-muted);margin-top:2px}
+.invalid .check input{border-color:var(--c-danger)}
+.consent{background:var(--surface-subtle);border-radius:var(--radius-md);padding:var(--sp-5)}
+.consent .check span{color:var(--text-body)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.submit-row{display:flex;flex-direction:column;gap:var(--sp-3)}
+.submit-row .btn{width:100%}
+#status:empty{display:none}
+.callout{display:flex;gap:var(--sp-4);padding:var(--sp-5) var(--sp-6);font-size:var(--fs-body-sm)}
+.callout::before{content:"";width:var(--bw-marker);flex:0 0 auto;background:var(--bar)}
+.callout.success{--bar:var(--c-success);background:var(--c-success-100);color:var(--c-success-700)}
+.callout.danger{--bar:var(--c-danger);background:var(--c-danger-100);color:var(--c-danger)}
+.callout strong{display:block;color:inherit;font-weight:600;margin-bottom:2px}
+.success-panel{display:none;flex-direction:column;gap:var(--sp-5);margin-top:var(--sp-7)}
+.done .success-panel{display:flex}
+.done form{display:none}
+
+/* Pop-up de privacidade */
+dialog{border:0;padding:0;color:var(--c-ink-700)}
+.modal{width:min(760px,calc(100vw - 32px));max-height:calc(100vh - 48px);overflow:auto;border-radius:var(--radius-xl);background:var(--c-white);box-shadow:0 18px 44px rgba(16,24,32,.12)}
+.modal::backdrop{background:rgba(8,22,31,.6)}
+.modal-body{position:relative;padding:var(--sp-8) var(--sp-7) var(--sp-7)}
+@media (max-width:560px){.modal-body{padding:var(--sp-7) var(--sp-5) var(--sp-6)}}
+.modal h2{font-size:var(--fs-h2);margin-top:var(--sp-3)}
+.modal .intro-p{margin-top:var(--sp-4);font-size:var(--fs-body-sm)}
+.modal-close{position:absolute;top:var(--sp-4);right:var(--sp-4);width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:var(--radius-md);background:transparent;color:var(--c-navy-900);cursor:pointer}
+.modal-close:hover{background:var(--c-cream-100)}
+.modal-foot{margin-top:var(--sp-7);display:flex;justify-content:flex-end}
+.kpl{list-style:none;margin:var(--sp-6) 0 0;padding:0;display:grid;gap:var(--sp-5)}
+.kpl li{display:flex;gap:var(--sp-4)}
+.kpl .n{flex:0 0 28px;font-family:var(--font-data);font-size:var(--fs-body-sm);font-weight:500;color:var(--c-clay-700);padding-top:2px}
+.kpl h3{font-family:var(--font-ui);font-size:var(--fs-body);font-weight:600;letter-spacing:0}
+.kpl p{margin-top:var(--sp-1);font-size:var(--fs-body-sm)}
+
+/* ===== Ajustes só para celular (abaixo de 960 px). O computador não muda ===== */
+@media (max-width:959px){
+  /* Topo, botões compactos na coluna do texto */
+  .h-photo{grid-row:2 / span 2;align-self:start}
+  .h-cta .cta-row{margin-top:var(--sp-5);gap:var(--sp-2);flex-direction:column;align-items:stretch}
+  .h-cta .cta-row .btn{width:100%;font-size:var(--fs-label);padding:12px 12px;gap:6px;line-height:1.25}
+  .h-cta .cta-row .btn .arrow{width:14px;height:14px}
+  .h-cta .metaline{margin-top:var(--sp-4);font-size:var(--fs-micro);flex-direction:column;gap:2px}
+  .h-cta .metaline span+span::before{content:none}
+
+  /* A verdade, foto ao lado do título */
+  .truth-grid{grid-template-columns:1fr 38%;column-gap:var(--sp-5);row-gap:0;
+    grid-template-areas:"eye eye" "h2 photo" "myths myths" "rule rule" "p p" "quote quote"}
+  .truth-grid > div:first-child{display:contents}
+  .truth-grid .eyebrow{grid-area:eye}
+  .truth-grid h2{grid-area:h2;margin-top:var(--sp-3);font-size:clamp(22px,6vw,28px)}
+  .truth-grid > .foto{grid-area:photo;margin-top:var(--sp-3);--ar:4/5}
+  .truth-grid .myths{grid-area:myths}
+  .truth-grid .rule{grid-area:rule}
+  .truth-grid .truth-p{grid-area:p}
+  .truth-grid .truth-quote{grid-area:quote;margin-top:var(--sp-7)}
+}
+@media (max-width:899px){
+  /* Método, cartões um embaixo do outro, com a foto ao lado do texto */
+  .steps{grid-template-columns:1fr;gap:var(--sp-3)}
+  .step{--pad:16px}
+  .steps .step{display:grid;grid-template-columns:42% 1fr;column-gap:var(--pad);align-items:center;padding:0 var(--pad) 0 0}
+  .steps .step .foto{grid-row:1 / span 2;margin:0;height:100%;aspect-ratio:auto;min-height:150px;border-radius:0}
+  .steps .step .foto .ph i,.steps .step .foto .ph small{display:none}
+  .steps .step h3{font-size:19px;align-self:end;padding-top:var(--pad)}
+  .steps .step p{font-size:13px;line-height:1.5;margin-top:var(--sp-2);align-self:start;padding-bottom:var(--pad)}
+
+  /* Professor, foto ao lado do nome */
+  #professor .prof{grid-template-columns:1fr 38%;column-gap:var(--sp-5);row-gap:0;
+    grid-template-areas:"eye eye" "intro photo" "stats stats"}
+  #professor .prof .prof-intro{grid-area:intro}
+  #professor .prof > div{display:contents}
+  #professor .prof .eyebrow{grid-area:eye}
+  #professor .prof h2{grid-area:h2;font-size:clamp(24px,6.4vw,30px)}
+  #professor .prof .rule{margin:var(--sp-6) 0}
+  #professor .prof .prose{grid-area:prose}
+  #professor .prof .prose p{font-size:var(--fs-body-sm)}
+  #professor .prof .creds{grid-area:creds}
+  #professor .prof .stats{grid-area:stats;gap:var(--sp-9)}
+  #professor .prof > .foto{grid-area:photo;align-self:start;margin-top:var(--sp-3)}
+  #professor .prof > .foto .ph i,#professor .prof > .foto .ph small{display:none}
+}
+
+@media (max-width:699px){
+  /* Regiões, cartões um embaixo do outro, com a foto ao lado do texto */
+  .mods.four{gap:var(--sp-3)}
+  .mods.four .mod{display:grid;grid-template-columns:42% 1fr;align-items:center}
+  .mods.four .mod .foto{height:100%;aspect-ratio:auto;min-height:150px}
+  .mods.four .mod .foto .ph i,.mods.four .mod .foto .ph small{display:none}
+  .mods.four .mod-body{padding:var(--sp-4);gap:var(--sp-2)}
+  .mods.four .mod-body h3{font-size:19px}
+  .mods.four .mod-body p{font-size:13px;line-height:1.5}
+}
+
+/* ===== Ajustes da Terapia Manual Moderna ===== */
+.hero .metaline.mods-line + .metaline.mods-line{margin-top:var(--sp-2)}
+.truth .myths.cases span{text-decoration:none;color:var(--c-cream-50)}
+.mods.two{grid-template-columns:1fr}
+@media (min-width:860px){.mods.two{grid-template-columns:1fr 1fr}}
+.price-card .plans{margin-top:0}
+.price-card .plans + .btn{margin-top:var(--sp-6)}
+@media (max-width:959px){
+  .h-cta .metaline.mods-line{gap:0}
+  .h-cta .metaline.mods-line + .metaline.mods-line{margin-top:var(--sp-3)}
+}
+@media (max-width:699px){
+  /* Módulos, um embaixo do outro, com a foto ao lado do texto */
+  .mods.two{gap:var(--sp-3)}
+  .mods.two .mod{display:grid;grid-template-columns:38% 1fr;align-items:stretch}
+  .mods.two .mod .foto{height:100%;aspect-ratio:auto;min-height:170px}
+  .mods.two .mod .foto .ph i,.mods.two .mod .foto .ph small{display:none}
+  .mods.two .mod-body{padding:var(--sp-4);gap:var(--sp-2)}
+  .mods.two .mod-body h3{font-size:19px}
+  .mods.two .mod-body .metaline{font-size:var(--fs-micro);flex-direction:column;gap:2px}
+  .mods.two .mod-body .metaline span+span::before{content:none}
+  .mods.two .mod-body li{font-size:13px;line-height:1.45}
+  .mods.two .mod-body li::before{margin-top:7px}
+}
+
+/* Situações do paciente antes do título */
+.truth .myths.cases{margin-top:var(--sp-5)}
+.truth .myths.cases + h2{margin-top:var(--sp-6)}
+@media (max-width:959px){
+  .truth-grid{grid-template-areas:"eye eye" "myths myths" "h2 photo" "rule rule" "p p" "quote quote"}
+  .truth-grid .myths.cases{margin-top:var(--sp-4);margin-bottom:var(--sp-2)}
+}
+
+/* ===== Carrossel das últimas turmas ===== */
+#turmas[hidden]{display:none}
+.car{position:relative;margin-top:var(--sp-9)}
+.car-track{display:flex;gap:var(--sp-5);overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:var(--sp-2)}
+.car-track::-webkit-scrollbar{display:none}
+.car-slide{flex:0 0 calc((100% - var(--sp-5)) / 2.15);scroll-snap-align:start;margin:0}
+.car-slide .foto{--ar:3/2;box-shadow:var(--shadow-sm)}
+.car-slide figcaption.car-cap{position:static;display:block;background:none;color:var(--text-body);padding:var(--sp-3) 2px 0;font-size:var(--fs-label);font-weight:500;letter-spacing:0;text-transform:none}
+.car-slide figcaption.car-cap b{color:var(--text-heading);font-weight:600}
+.car-nav{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-4);margin-top:var(--sp-6)}
+.car-dots{display:flex;gap:var(--sp-2)}
+.car-dots button{width:9px;height:9px;padding:0;border:0;border-radius:50%;background:var(--c-cream-500);opacity:.45;cursor:pointer;transition:opacity var(--dur-fast),transform var(--dur-fast)}
+.car-dots button[aria-current="true"]{opacity:1;background:var(--c-clay-600);transform:scale(1.25)}
+.car-arrows{display:flex;gap:var(--sp-2)}
+.car-arrows button{width:44px;height:44px;border-radius:50%;border:0;background:var(--surface-card);color:var(--c-clay-700);box-shadow:var(--shadow-sm);display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.car-arrows button:hover{background:var(--c-clay-100)}
+.car-arrows button:disabled{opacity:.35;cursor:default}
+@media (max-width:759px){
+  .car-slide{flex-basis:86%}
+  .car-track{gap:var(--sp-3)}
+}
+
+/* ===== Seção "Você conhece esse paciente?" ===== */
+.pac-grid{display:grid;grid-template-columns:7fr 5fr;column-gap:var(--sp-11);row-gap:0;align-items:start;
+  grid-template-areas:"eye photo" "h2 photo" "list photo" "sub photo" "quote quote"}
+.pac-eye{grid-area:eye}
+.pac-h2{grid-area:h2;font-size:clamp(30px,4vw,46px);margin-top:var(--sp-3)}
+.pac-list{grid-area:list;list-style:none;margin:var(--sp-7) 0 0;padding:0;display:grid;gap:var(--sp-3)}
+.pac-list li{position:relative;padding:var(--sp-4) var(--sp-5) var(--sp-4) var(--sp-6);background:rgba(255,255,255,.05);border-radius:var(--radius-lg);box-shadow:inset 3px 0 0 var(--c-teal-300);font-family:var(--font-display);font-style:italic;font-size:clamp(18px,1.8vw,21px);line-height:1.35;color:var(--c-cream-50)}
+.pac-list li::before{content:"\201C";color:var(--c-teal-300);font-style:normal;margin-right:2px}
+.pac-list li::after{content:"\201D";color:var(--c-teal-300);font-style:normal;margin-left:2px}
+.pac-photo{grid-area:photo;margin:0}
+.pac-sub{grid-area:sub;margin-top:var(--sp-8)}
+.pac-sub .rule{margin-top:0}
+.pac-h3{font-size:clamp(24px,3vw,34px);max-width:32ch}
+.pac-sub .truth-p{margin-top:var(--sp-4);max-width:68ch}
+.pac-quote{grid-area:quote;margin-top:var(--sp-8)}
+@media (max-width:959px){
+  .pac-grid{grid-template-columns:1fr 38%;column-gap:var(--sp-4);grid-template-areas:"eye eye" "h2 h2" "list photo" "sub sub" "quote quote"}
+  .pac-h2{font-size:clamp(28px,7vw,36px)}
+  .pac-list{margin-top:var(--sp-5);gap:var(--sp-2)}
+  .pac-list li{font-size:15px;padding:var(--sp-3) var(--sp-4)}
+  .pac-photo{margin-top:var(--sp-5);align-self:stretch;aspect-ratio:auto;min-height:220px}
+  .pac-photo .ph i,.pac-photo .ph small{display:none}
+  .pac-sub{margin-top:var(--sp-7)}
+  .pac-h3{font-size:clamp(22px,6vw,28px)}
+}
+
+.hero .metaline.mods-line{display:block}
+.hero .metaline .mod-name{display:block;font-weight:600;margin-bottom:2px}
+.hero .metaline .mod-name + span::before{content:none}
+.hero .metaline.mods-line span+span::before{margin-left:var(--sp-2)}
+.hero .metaline .mod-name + span::before{margin-left:0}
+@media (max-width:959px){.hero .metaline.mods-line > span{display:block}.hero .metaline.mods-line span+span::before{content:none}}
+.pac-photo{align-self:start}
+.dep-card .todo{font-size:inherit}
+
+/* Depoimentos em carrossel */
+.dep-track .dep-card{flex:0 0 calc((100% - 2 * var(--sp-5)) / 3);max-width:none;scroll-snap-align:start;margin:0}
+.car-track.is-static{justify-content:center}
+.car-nav[hidden]{display:none}
+@media (max-width:959px){.dep-track .dep-card{flex-basis:calc((100% - var(--sp-5)) / 2)}}
+@media (max-width:759px){.dep-track .dep-card{flex-basis:86%}}
+
+/* Celular estreito, credenciais na largura toda logo abaixo do parágrafo */
+@media (max-width:480px){
+  #professor .prof{container-type:inline-size;grid-template-columns:minmax(0,1fr) 38%}
+  #professor .prof-intro{min-width:0}
+  #professor .prof-intro .creds{width:100cqw;position:relative}
+}
+
+/* Valor no PIX em destaque */
+.pix{display:flex;align-items:center;gap:var(--sp-3);margin-top:var(--sp-3);padding:var(--sp-3) var(--sp-4);border-radius:var(--radius-md);background:var(--c-success-100);color:var(--c-success-700)}
+.pix-tag{flex:0 0 auto;font-size:var(--fs-micro);font-weight:700;letter-spacing:.08em;background:var(--c-success);color:#fff;padding:4px 8px;border-radius:var(--radius-sm)}
+.pix b{display:block;font-family:var(--font-display);font-size:26px;font-weight:600;line-height:1.1;color:var(--c-success-700)}
+.pix > div > span{display:block;font-size:var(--fs-label);line-height:1.35;margin-top:2px}
+.plan .s + .pix{margin-top:var(--sp-3)}
+</style>
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <div class="wrap">
+    <div class="lockup sm" aria-label="Prof. Marcelo Furlan, fisioterapeuta osteopata D.O.">
+      <div class="lockup-name">Prof. Marcelo Furlan</div>
+      <div class="lockup-role">Fisioterapeuta Osteopata D.O.</div>
+    </div>
+    <div class="topbar-right">
+      <a class="btn btn-primary btn-sm" href="#lista-espera">Garanta a sua vaga</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="wrap hero-grid lm-hero">
+    <div class="h-top">
+      <div class="eyebrow">Formação presencial em Terapia Manual Moderna</div>
+      <h1>Saiba o que fazer quando a técnica de sempre <em>não funciona.</em></h1>
+      <div class="rule" aria-hidden="true"></div>
+    </div>
+    <p class="lead h-lead">Dois módulos presenciais, com revisão em laboratório de anatomia e prática desde a primeira hora. Para fisioterapeutas e estudantes que querem resultados de verdade e segurança na prática.</p>
+    <div class="hero-photo h-photo">
+      <figure class="foto" data-foto="TM-01" data-ar="4/5" data-desc="Você aplicando uma técnica articular em um aluno, com a turma observando"></figure>
+      <div class="tag"><b>2 módulos</b><span>Coluna Vertebral e Membros e ATM</span></div>
+    </div>
+    <div class="h-cta">
+      <div class="cta-row">
+        <a class="btn btn-primary btn-xl" href="#lista-espera">Quero garantir a minha vaga <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="btn btn-secondary btn-lg" href="#metodo">Saiba mais sobre o curso</a>
+      </div>
+      <div class="metaline mods-line"><span class="mod-name">Módulo 01 · Coluna Vertebral</span><span data-cfg="datasColuna" data-ph="[Data a confirmar]"></span><span data-cfg="local" data-ph="[Local]"></span></div>
+      <div class="metaline mods-line"><span class="mod-name">Módulo 02 · Membros e ATM</span><span data-cfg="datasMembros" data-ph="[Data a confirmar]"></span><span data-cfg="local" data-ph="[Local]"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. DESTAQUES -->
+<div class="wrap">
+  <ul class="highlights">
+    <li><span class="hi-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 11V6a2 2 0 0 0-4 0v5"/><path d="M14 10V4a2 2 0 0 0-4 0v6"/><path d="M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg></span><div><b>Hands On</b><span>a maior parte do curso é prática na maca</span></div></li>
+    <li><span class="hi-ic"><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><g transform="rotate(-36 12 12)" stroke-linecap="round"><path d="M4.6 12H0.4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M19 11.3L23.4 9.3" stroke="currentColor" stroke-width="1.7" fill="none"/><path d="M19 12.7L23.6 13.7" stroke="currentColor" stroke-width="1.7" fill="none"/><path d="M3.8 12C6.8 4.8 15.2 4.6 19.8 11.2L19.8 12.8C15.2 19.4 6.8 19.2 3.8 12Z" fill="currentColor"/><path d="M5.4 12C9 8.4 14.6 8.1 19.4 11.4M5.4 12C9.6 10.7 14.6 10.9 19.4 12M5.4 12C9 15.6 14.6 15.9 19.4 12.6" stroke="#F4E0D4" stroke-width=".75" fill="none"/></g></svg></span><div><b>Anatomia em peças reais</b><span>revisão no laboratório da UniMetrocamp</span></div></li>
+    <li><span class="hi-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="4.6" rx="1.6"/><rect x="7" y="9.7" width="10" height="4.6" rx="1.6"/><rect x="7" y="16.9" width="10" height="4.6" rx="1.6"/><path d="M7 4.8H4.2M17 4.8h2.8M7 12H4.2M17 12h2.8M7 19.2H4.2M17 19.2h2.8"/></svg></span><div><b>Técnicas articulares e musculares</b><span>seguras e fáceis de aplicar</span></div></li>
+  </ul>
+</div>
+
+<!-- 3. O PACIENTE QUE TRAVA A AGENDA -->
+<section class="sec register-deep truth">
+  <div class="wrap pac-grid">
+    <div class="eyebrow pac-eye">Na sua clínica</div>
+    <h2 class="pac-h2">Você conhece esse paciente?</h2>
+    <ul class="pac-list" aria-label="Situações que aparecem na consulta">
+      <li>Já fez de tudo e a dor continua.</li>
+      <li>Piora com a técnica de sempre.</li>
+      <li>A dor não combina com o exame.</li>
+      <li>Manipular, mobilizar ou nem tocar?</li>
+    </ul>
+    <figure class="foto pac-photo" data-foto="TM-08" data-ar="4/3" data-desc="Você em aula, explicando para a turma"></figure>
+    <div class="pac-sub">
+      <div class="rule" aria-hidden="true"></div>
+      <h3 class="pac-h3">Não falta técnica. Falta saber qual usar, em quem e quando.</h3>
+      <p class="truth-p">O que separa quem repete protocolos de quem resolve casos difíceis não é uma técnica secreta. É o raciocínio por trás de cada decisão.</p>
+    </div>
+    <p class="big-quote truth-quote pac-quote">Aqui você aprende a escolher a técnica certa para cada paciente, na dose certa e no momento certo.</p>
+  </div>
+</section>
+
+<!-- 4. MÉTODO -->
+<section class="sec" id="metodo">
+  <div class="wrap">
+    <div class="sec-head center metodo-head">
+      <div class="eyebrow">O método</div>
+      <h2>Um raciocínio que serve para qualquer paciente</h2>
+      <div class="rule" aria-hidden="true"></div>
+      <p>Cada região segue o mesmo roteiro. Você não sai somente sabendo uma porção de técnicas. Você sai sabendo avaliar, tratar e reavaliar.</p>
+    </div>
+    <div class="steps">
+      <article class="step has-photo">
+        <figure class="foto" data-foto="TM-04" data-ar="4/3" data-desc="Avaliação do paciente, com anamnese ou teste"></figure>
+        <h3>Entender a dor</h3>
+        <p>Identifique se o quadro é nociceptivo, neuropático ou nociplástico e reconheça os sinais de alerta antes de qualquer técnica. Cada tipo pede uma conduta diferente.</p>
+      </article>
+      <article class="step has-photo">
+        <figure class="foto" data-foto="TM-05" data-ar="4/3" data-desc="Uma técnica articular sendo aplicada"></figure>
+        <h3>Escolher e dosar</h3>
+        <p>Técnica articular ou muscular, grau, vetor e tempo. Você sabe por que escolheu aquela técnica e não outra, e como ajustar a dose ao paciente na sua frente.</p>
+      </article>
+      <article class="step has-photo">
+        <figure class="foto" data-foto="TM-06" data-ar="4/3" data-desc="Reavaliação do movimento logo depois da técnica"></figure>
+        <h3>Reavaliar na hora</h3>
+        <p>Exame, intervenção e reavaliação imediata do sinal concordante. O paciente responde, e você decide se mantém, progride ou muda de rumo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 6. DIFERENCIAIS -->
+<section class="sec alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Por que este curso é diferente</div>
+      <h2>Feito para você usar na segunda-feira seguinte</h2>
+      <div class="rule" aria-hidden="true"></div>
+    </div>
+    <div class="items c3">
+      <div class="item"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2h6"/><path d="M10 2v6L4 19a2 2 0 0 0 1.8 3h12.4a2 2 0 0 0 1.8-3L14 8V2"/><line x1="7" y1="15" x2="17" y2="15"/></svg></span><div><h3>Evidência sem enfeite</h3><p>Cada região traz o que a literatura realmente mostra, e eu digo com clareza quando a evidência é fraca.</p></div></div>
+      <div class="item"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 11V6a2 2 0 0 0-4 0v5"/><path d="M14 10V4a2 2 0 0 0-4 0v6"/><path d="M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg></span><div><h3>Mão na massa</h3><p>Você pratica a maior parte do tempo, com técnicas fáceis de aplicar logo depois do curso.</p></div></div>
+      <div class="item"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><div><h3>Segurança em primeiro lugar</h3><p>Técnicas confortáveis para o paciente e critérios claros para saber quando não tratar.</p></div></div>
+      <div class="item"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><div><h3>Comunicação como ferramenta</h3><p>Ciência traduzida e uma forma objetiva de se comunicar com os pacientes.</p></div></div>
+      <div class="item"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span><div><h3>Sem promessas milagrosas</h3><p>Você aprende a decidir com critério, e é isso que sustenta resultado clínico.</p></div></div>
+      <div class="item"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><div><h3>Turma pequena</h3><p>Vagas limitadas para que cada aluno receba correção de perto durante a prática.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. MÓDULOS -->
+<section class="sec" id="modulos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">O que você vai praticar</div>
+      <h2>Dois módulos que se completam</h2>
+      <div class="rule" aria-hidden="true"></div>
+      <p>Faça um módulo ou os dois. Juntos, eles cobrem o corpo inteiro.</p>
+    </div>
+    <div class="mods two">
+      <article class="mod">
+        <figure class="foto" data-foto="TM-03" data-desc="Técnica de coluna (lombar, torácica ou cervical) sendo praticada"></figure>
+        <div class="mod-body">
+          <div class="eyebrow">Módulo 01</div>
+          <h3>Coluna Vertebral</h3>
+          <div class="metaline"><span data-cfg="datasColuna" data-ph="[Data a confirmar]"></span><span data-cfg="local" data-ph="[Local]"></span></div>
+          <ul>
+            <li>Neurofisiologia da manipulação, o que ela faz e o que não faz</li>
+            <li>Palpação, com honestidade sobre o que ela mostra</li>
+            <li>Pontos-gatilho e dor referida</li>
+            <li>Técnicas para sacroilíaca, lombar, torácica e cervical</li>
+          </ul>
+        </div>
+      </article>
+      <article class="mod">
+        <figure class="foto" data-foto="TM-02" data-desc="Técnica de ombro, joelho ou ATM sendo praticada"></figure>
+        <div class="mod-body">
+          <div class="eyebrow">Módulo 02</div>
+          <h3>Membros e ATM</h3>
+          <div class="metaline"><span data-cfg="datasMembros" data-ph="[Data a confirmar]"></span><span data-cfg="local" data-ph="[Local]"></span></div>
+          <ul>
+            <li>Técnicas articulares e musculares seguras e mapas de dor referida</li>
+            <li>Ombro, cotovelo, punho e mão</li>
+            <li>Quadril, joelho, tornozelo e pé</li>
+            <li>Articulação temporomandibular</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 8. PARA QUEM É -->
+<section class="sec alt" id="para-quem">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Para quem é</div>
+      <h2>Quem mais aproveita este curso</h2>
+      <div class="rule" aria-hidden="true"></div>
+    </div>
+    <div class="fit">
+      <div class="card yes">
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Fisioterapeutas que já atendem e querem mais segurança nos casos que travam a agenda</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Estudantes de fisioterapia que querem chegar ao estágio e à clínica com segurança na terapia manual</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Quem quer mais critério para escolher entre manipular, mobilizar ou tratar o músculo</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Quem quer mais resultado com técnicas confortáveis e seguras para o paciente</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. PROFESSOR -->
+<section class="sec" id="professor">
+  <div class="wrap prof">
+    <figure class="foto" data-foto="TM-07" data-ar="4/5" data-desc="Seu retrato profissional, de preferência em ambiente de aula ou clínica"></figure>
+    <div>
+      <div class="eyebrow">Quem vai te ensinar</div>
+      <div class="prof-intro">
+        <h2>Prof. Marcelo Pinese Furlan</h2>
+        <div class="rule" aria-hidden="true"></div>
+        <div class="prose"><p>Fisioterapeuta há mais de 20 anos, especialista em osteopatia e quiropraxista. É professor de ortopedia e terapia manual na graduação da UniMetrocamp e em cursos de pós-graduação, e atende pacientes toda semana. Ensina do jeito que gosta de aprender, mastigado, direto ao ponto e com os atalhos que só a prática clínica mostra.</p></div>
+        <ul class="creds">
+          <li>Especialista em Osteopatia pelo COFFITO e D.O. pela Formação Belgo-Espanhola de Osteopatia</li>
+          <li>Pós-graduado em Anatomia Humana e em Fisioterapia Traumato-Ortopédica</li>
+          <li>Professor de graduação e de pós-graduação em Ortopedia e Terapia Manual</li>
+        </ul>
+      </div>
+      <div class="stats">
+        <div><b data-count="20" data-prefix="+">+20</b><span>anos de clínica</span></div>
+        <div><b data-count="200" data-prefix="+">+200</b><span>alunos formados</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+/* Carrossel reutilizável (turmas e depoimentos) */
+window.montaCarrossel = function(track, dots, prev, next){
+  const slides = [...track.children];
+  if (!slides.length) return;
+  const nav = prev.closest('.car-nav');
+  const passo = () => slides[0].getBoundingClientRect().width + (parseFloat(getComputedStyle(track).columnGap) || 16);
+  prev.onclick = () => track.scrollBy({left: -passo(), behavior: 'smooth'});
+  next.onclick = () => track.scrollBy({left: passo(), behavior: 'smooth'});
+  track.addEventListener('keydown', e => { if (e.key === 'ArrowRight') { e.preventDefault(); next.click(); } if (e.key === 'ArrowLeft') { e.preventDefault(); prev.click(); } });
+  function atualiza(){
+    const cabe = track.scrollWidth <= track.clientWidth + 4;
+    nav.hidden = cabe;
+    track.classList.toggle('is-static', cabe);
+    const porTela = Math.max(1, Math.round(track.clientWidth / passo()));
+    const total = Math.max(1, slides.length - porTela + 1);
+    if (dots.children.length !== total) {
+      dots.innerHTML = '';
+      for (let i = 0; i < total; i++) {
+        const b = document.createElement('button');
+        b.type = 'button'; b.setAttribute('aria-label', 'Ir para a posição ' + (i + 1));
+        b.addEventListener('click', () => track.scrollTo({left: slides[i].offsetLeft - slides[0].offsetLeft, behavior: 'smooth'}));
+        dots.append(b);
+      }
+    }
+    const atual = Math.min(total - 1, Math.round(track.scrollLeft / passo()));
+    [...dots.children].forEach((d, i) => d.setAttribute('aria-current', String(i === atual)));
+    prev.disabled = track.scrollLeft < 4;
+    next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+  }
+  track.addEventListener('scroll', () => requestAnimationFrame(atualiza), {passive: true});
+  addEventListener('resize', atualiza);
+  atualiza();
+};
+</script>
+
+<!-- TURMAS ANTERIORES (carrossel) -->
+<section class="sec alt" id="turmas" aria-labelledby="turmas-titulo">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Turmas anteriores</div>
+      <h2 id="turmas-titulo">Quem já concluiu a formação</h2>
+      <div class="rule" aria-hidden="true"></div>
+      <p>O hall da fama da Terapia Manual Moderna.</p>
+    </div>
+    <div class="car" aria-roledescription="carrossel" aria-label="Fotos das turmas anteriores">
+      <div class="car-track" id="car-track" tabindex="0"></div>
+      <div class="car-nav">
+        <div class="car-dots" id="car-dots"></div>
+        <div class="car-arrows">
+          <button type="button" id="car-prev" aria-label="Foto anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button type="button" id="car-next" aria-label="Próxima foto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DEPOIMENTOS DE ALUNOS
+     Cole este bloco inteiro logo ANTES do comentário "11. OFERTA E LISTA DE ESPERA"
+     (ou seja, entre a seção do professor e a seção Investimento).
+     Ele só aparece na página quando houver depoimento aprovado para o curso.
+     Em cada curso, mude só a linha CURSO na parte de configuração do script, no fim deste bloco.
+     ============================================================ -->
+<style>
+.dep-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--sp-6);margin-top:var(--sp-9)}
+.dep-card{flex:1 1 320px;max-width:380px;margin:0;display:flex;flex-direction:column;gap:var(--sp-6);justify-content:space-between;background:var(--surface-card);border-radius:var(--radius-xl);box-shadow:var(--shadow-sm);padding:var(--sp-7)}
+.dep-text{margin:0;position:relative;padding-top:var(--sp-7)}
+.dep-text::before{content:"\201C";position:absolute;top:-6px;left:-2px;font-family:var(--font-display);font-size:64px;line-height:1;color:var(--text-accent)}
+.dep-text p{margin:0;font-family:var(--font-display);font-size:var(--fs-h3);line-height:1.4;color:var(--text-heading);overflow-wrap:anywhere}
+.dep-who{display:flex;align-items:center;gap:var(--sp-4)}
+.dep-av{flex:0 0 56px;width:56px;height:56px;border-radius:50%;overflow:hidden;background:var(--c-cream-100);box-shadow:inset 0 0 0 1.5px var(--border-default);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:24px;color:var(--text-muted)}
+.dep-av img{width:100%;height:100%;object-fit:cover;display:block}
+.dep-id{display:flex;flex-direction:column;min-width:0}
+.dep-id strong{font-size:var(--fs-body-sm);color:var(--text-heading);overflow-wrap:anywhere}
+.dep-id a{font-size:var(--fs-label);font-weight:600;color:var(--text-accent);text-decoration:none;overflow-wrap:anywhere}
+.dep-id a:hover{text-decoration:underline}
+.dep-more{display:flex;justify-content:center;margin-top:var(--sp-8)}
+#depoimentos[hidden],.dep-more[hidden]{display:none}
+@media (max-width:560px){.dep-card{padding:var(--sp-6);max-width:none}}
+</style>
+
+<section class="sec" id="depoimentos" hidden aria-labelledby="dep-titulo">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="eyebrow">Quem já fez</div>
+      <h2 id="dep-titulo">O que dizem os alunos</h2>
+      <div class="rule" aria-hidden="true"></div>
+    </div>
+    <div class="car" aria-roledescription="carrossel" aria-label="Depoimentos de alunos">
+      <div class="car-track dep-track" id="dep-grid" tabindex="0"></div>
+      <div class="car-nav" hidden>
+        <div class="car-dots" id="dep-dots"></div>
+        <div class="car-arrows">
+          <button type="button" id="dep-prev" aria-label="Depoimento anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button type="button" id="dep-next" aria-label="Próximo depoimento"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  /* ============ CONFIGURAÇÃO ============ */
+  const API   = "https://script.google.com/macros/s/AKfycbzXeBhNlrlYTk_yOsSeKX5FRsN_MBn1Y3Kdg6RMq097zGrYHypfSzCmO-ZJ0ghJ_XvtLQ/exec";
+  const CURSOS = ["tmm-membros-atm", "tmm-coluna"]; // os dois módulos da Terapia Manual Moderna
+  /* ====================================== */
+
+  const secao = document.getElementById('depoimentos');
+  const grade = document.getElementById('dep-grid');
+  if (!secao || !grade) return;
+
+  /* Fotos guardadas no Drive chegam como "drive:ID". Aqui viram um endereço de imagem que abre no site. */
+  function fotoUrl(f){
+    f = String(f || '');
+    const m = f.match(/drive(?:%3A|:)([\w-]{20,})/i);
+    if (m) return 'https://lh3.googleusercontent.com/d/' + m[1] + '=w200';
+    return /^https:\/\//.test(f) ? f : '';
+  }
+
+  function cartao(d){
+    const fig = document.createElement('figure');
+    fig.className = 'dep-card';
+
+    const q = document.createElement('blockquote');
+    q.className = 'dep-text';
+    const p = document.createElement('p');
+    p.textContent = d.comentario;           // sempre como texto, nunca como HTML
+    q.append(p);
+
+    const quem = document.createElement('figcaption');
+    quem.className = 'dep-who';
+
+    const av = document.createElement('span');
+    av.className = 'dep-av';
+    const inicial = (String(d.nome || '?').trim()[0] || '?').toUpperCase();
+    const foto = fotoUrl(d.foto);
+    if (foto){
+      const img = document.createElement('img');
+      img.src = foto;
+      img.alt = 'Foto de ' + d.nome;
+      img.loading = 'lazy';
+      img.referrerPolicy = 'no-referrer';
+      img.addEventListener('error', () => { av.textContent = inicial; });
+      av.append(img);
+    } else {
+      av.textContent = inicial;
+    }
+
+    const id = document.createElement('span');
+    id.className = 'dep-id';
+    const nome = document.createElement('strong');
+    nome.textContent = d.nome;
+    id.append(nome);
+    if (/^https:\/\/instagram\.com\//.test(d.instagramUrl || '')){
+      const a = document.createElement('a');
+      a.href = d.instagramUrl;
+      a.target = '_blank';
+      a.rel = 'noopener nofollow';
+      a.textContent = '@' + d.instagram;
+      id.append(a);
+    }
+
+    quem.append(av, id);
+    fig.append(q, quem);
+    return fig;
+  }
+
+  /* Na prévia (fora do site publicado), mostra cartões de exemplo para ver o layout */
+  function exemplos(){
+    if (/github\.io$/.test(location.hostname)) return;
+    [1,2,3,4].forEach(() => {
+      const c = cartao({nome:'[Nome do aluno]', comentario:'[Depoimento aprovado no formulário de depoimentos]', instagram:'instagram', instagramUrl:'https://instagram.com/'});
+      c.querySelector('.dep-text p').classList.add('todo'); c.querySelector('strong').classList.add('todo');
+      grade.append(c);
+    });
+    mostra();
+  }
+  function mostra(){
+    secao.hidden = false;
+    montaCarrossel(grade, document.getElementById('dep-dots'), document.getElementById('dep-prev'), document.getElementById('dep-next'));
+  }
+
+  Promise.all(CURSOS.map(c => fetch(API + '?curso=' + encodeURIComponent(c)).then(r => r.json()).catch(() => null)))
+    .then(rs => {
+      const vistos = new Set(), lista = [];
+      rs.forEach(j => ((j && j.ok && Array.isArray(j.depoimentos)) ? j.depoimentos : []).forEach(d => {
+        const k = (d.nome || '') + '|' + (d.comentario || '');
+        if (!vistos.has(k)) { vistos.add(k); lista.push(d); }   // quem fez os dois módulos aparece uma vez só
+      }));
+      if (!lista.length) { exemplos(); return; }   // no site, sem depoimento aprovado a seção não aparece
+      lista.forEach(d => grade.append(cartao(d)));
+      mostra();
+    })
+    .catch(() => exemplos());                       // se der erro, o visitante não vê nada diferente
+})();
+</script>
+
+<!-- 11. OFERTA E LISTA DE ESPERA -->
+<section class="sec register-deep" id="investimento">
+  <div class="wrap">
+    <div class="offer-grid top">
+      <div>
+        <div class="sec-head">
+          <div class="eyebrow">Investimento</div>
+          <h2>Tudo o que está incluso</h2>
+          <div class="rule" aria-hidden="true"></div>
+        </div>
+        <ul class="stack">
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 11V6a2 2 0 0 0-4 0v5"/><path d="M14 10V4a2 2 0 0 0-4 0v6"/><path d="M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg><div><b>Curso presencial em dois módulos</b><small>A maior parte em prática supervisionada</small></div></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg><div><b>Revisão no laboratório de anatomia da UniMetrocamp</b><small>Com peças reais, antes da prática</small></div></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="4.6" rx="1.6"/><rect x="7" y="9.7" width="10" height="4.6" rx="1.6"/><rect x="7" y="16.9" width="10" height="4.6" rx="1.6"/><path d="M7 4.8H4.2M17 4.8h2.8M7 12H4.2M17 12h2.8M7 19.2H4.2M17 19.2h2.8"/></svg><div><b>Técnicas articulares e musculares seguras</b><small>Fáceis de aplicar na segunda-feira seguinte</small></div></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg><div><b>Raciocínio clínico em três passos</b><small>Entender a dor, escolher e dosar, reavaliar na hora</small></div></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><div><b>Critérios claros de segurança</b><small>Para saber quando tratar e quando não tocar</small></div></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg><div><b>Certificado de conclusão de cada módulo</b></div></li>
+        </ul>
+      </div>
+      <div class="price-card">
+        <div class="plans">
+          <div class="plan best">
+            <span class="flag">Melhor escolha</span>
+            <h3>Combo, os 2 módulos</h3>
+            <p class="p">R$ <span data-cfg="valorCombo" data-ph="[valor]"></span></p>
+            <p class="s" data-cfg="condicaoCartao" data-ph="[condição no cartão]"></p>
+            <div class="pix"><span class="pix-tag">PIX</span><div><b>R$&nbsp;<span data-cfg="pixCombo" data-ph="[valor]"></span></b><span data-cfg="condicaoPix" data-ph="[condição no PIX]"></span></div></div>
+            <p class="s" data-if="economiaCombo"><strong>Você economiza R$ <span data-cfg="economiaCombo"></span></strong></p>
+          </div>
+          <div class="plan">
+            <h3>Módulo avulso</h3>
+            <p class="p">R$ <span data-cfg="valorModulo" data-ph="[valor]"></span></p>
+            <p class="s" data-cfg="condicaoCartao" data-ph="[condição no cartão]"></p>
+            <div class="pix"><span class="pix-tag">PIX</span><div><b>R$&nbsp;<span data-cfg="pixModulo" data-ph="[valor]"></span></b><span data-cfg="condicaoPix" data-ph="[condição no PIX]"></span></div></div>
+          </div>
+        </div>
+        <a class="btn btn-primary btn-xl" href="#lista-espera">Quero garantir o meu nome na lista de espera <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <p class="cta-note"><span class="dot" aria-hidden="true"></span><span data-if="vagas">Turma limitada a&nbsp;<span data-cfg="vagas"></span>&nbsp;alunos</span><span data-ifnot="vagas">Vagas limitadas</span></p>
+        <p class="info-wa">Mais informações sobre o curso serão comunicadas em breve. Para outras informações, entre em contato pelo <a href="https://wa.me/5519981688086?text=Ol%C3%A1%2C%20Prof.%20Marcelo!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20curso%20Terapia%20Manual%20Moderna." target="_blank" rel="noopener">WhatsApp (19) 98168-8086</a>.</p>
+        <ul class="secure">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Módulo 01 · Coluna Vertebral · <span data-cfg="datasColuna" data-ph="[Data a confirmar]"></span></span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Módulo 02 · Membros e ATM · <span data-cfg="datasMembros" data-ph="[Data a confirmar]"></span></span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>UniMetrocamp · <a href="https://www.google.com/maps/search/?api=1&query=UniMetrocamp+Rua+Dr.+Sales+de+Oliveira+1661+Campinas+SP" target="_blank" rel="noopener">Rua Dr. Sales de Oliveira, 1661, Vila Industrial, Campinas, SP</a></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="form-card" id="lista-espera" aria-labelledby="form-titulo">
+      <div class="form-head">
+        <div class="eyebrow">Lista de espera</div>
+        <h2 id="form-titulo">Garanta o seu nome na lista</h2>
+        <p>Deixe seus dados e eu aviso você em primeira mão quando as inscrições abrirem. Leva menos de um minuto.</p>
+      </div>
+
+      <form id="form" novalidate>
+        <!-- Anti-spam. Pessoas não veem este campo -->
+        <div class="hp" aria-hidden="true"><label>Não preencha <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+        <div class="field" data-field="nome">
+          <label class="label" for="nome">Nome completo <span class="opt">(obrigatório)</span></label>
+          <input class="input" id="nome" name="nome" type="text" autocomplete="name" required maxlength="120">
+          <span class="err">Informe seu nome completo.</span>
+        </div>
+
+        <div class="row two">
+          <div class="field" data-field="email">
+            <label class="label" for="email">E-mail <span class="opt">(obrigatório)</span></label>
+            <input class="input" id="email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="120">
+            <span class="err">Informe um e-mail válido.</span>
+          </div>
+          <div class="field" data-field="celular">
+            <label class="label" for="celular">Celular com DDD (WhatsApp) <span class="opt">(obrigatório)</span></label>
+            <input class="input" id="celular" name="celular" type="tel" autocomplete="tel-national" inputmode="numeric" placeholder="(19) 99999-9999" required maxlength="16">
+            <span class="err">Informe o celular com DDD.</span>
+          </div>
+        </div>
+
+        <div class="field" data-field="perfil">
+          <label class="label" for="perfil">Você é <span class="opt">(obrigatório)</span></label>
+          <select class="input" id="perfil" name="perfil" required>
+            <option value="">Selecione</option>
+            <option>Fisioterapeuta</option>
+            <option>Estudante de Fisioterapia</option>
+            <option>Outro profissional da saúde</option>
+          </select>
+          <span class="err">Escolha uma opção.</span>
+        </div>
+
+        <div class="row city">
+          <div class="field" data-field="cidade">
+            <label class="label" for="cidade">Cidade <span class="opt">(obrigatório)</span></label>
+            <input class="input" id="cidade" name="cidade" type="text" autocomplete="address-level2" required maxlength="80">
+            <span class="err">Informe sua cidade.</span>
+          </div>
+          <div class="field" data-field="uf">
+            <label class="label" for="uf">UF <span class="opt">(obrigatório)</span></label>
+            <select class="input" id="uf" name="uf" required>
+              <option value="">UF</option>
+              <option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MT</option><option>MS</option><option>MG</option><option>PA</option><option>PB</option><option>PR</option><option>PE</option><option>PI</option><option>RJ</option><option>RN</option><option>RS</option><option>RO</option><option>RR</option><option>SC</option><option selected>SP</option><option>SE</option><option>TO</option>
+            </select>
+            <span class="err">Escolha a UF.</span>
+          </div>
+        </div>
+
+        <fieldset class="field">
+          <legend class="label">Qual módulo te interessa? <span class="opt">(opcional)</span></legend>
+          <div class="checks cols">
+            <label class="check"><input type="checkbox" name="interesses" value="Terapia Manual Moderna - Coluna Vertebral"><span>Módulo 01<small>Coluna Vertebral</small></span></label>
+            <label class="check"><input type="checkbox" name="interesses" value="Terapia Manual Moderna - Membros & ATM"><span>Módulo 02<small>Membros e ATM</small></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend class="label">Quer saber também de outros cursos? <span class="opt">(opcional)</span></legend>
+          <div class="checks cols">
+            <label class="check"><input type="checkbox" name="interesses" value="Mobilização Neural"><span>Mobilização Neural</span></label>
+            <label class="check"><input type="checkbox" name="interesses" value="Liberação Miofascial"><span>Liberação Miofascial</span></label>
+            <label class="check"><input type="checkbox" name="interesses" value="E-books de atualização de condutas e guidelines"><span>E-books de atualização de condutas</span></label>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label class="label" for="como_conheceu">Como você me conheceu? <span class="opt">(opcional)</span></label>
+          <select class="input" id="como_conheceu" name="como_conheceu">
+            <option value="">Selecione</option>
+            <option>Instagram</option>
+            <option>Indicação de colega</option>
+            <option>Faculdade ou pós-graduação</option>
+            <option>Já fiz um curso com você</option>
+            <option>Outro</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label class="label" for="sugestoes">Ficou alguma dúvida sobre o curso? <span class="opt">(opcional)</span></label>
+          <textarea class="input" id="sugestoes" name="sugestoes" maxlength="1000" placeholder="Escreva aqui, e eu respondo por WhatsApp ou e-mail"></textarea>
+        </div>
+
+        <div class="field consent" data-field="consentimento">
+          <label class="check">
+            <input type="checkbox" id="consentimento" name="consentimento" value="sim" required>
+            <span>Autorizo Marcelo Pinese Furlan a usar meu e-mail e meu celular, inclusive por WhatsApp, para receber informações sobre cursos, novas turmas e conteúdos educativos. Sei que posso cancelar essa autorização a qualquer momento, pelo e-mail marcelofurlan@yahoo.com.br ou respondendo a qualquer mensagem. <a href="#privacidade" data-open-privacy>Como uso seus dados</a></span>
+          </label>
+          <span class="err">Para entrar na lista, é preciso marcar a autorização.</span>
+        </div>
+
+        <div class="submit-row">
+          <button class="btn btn-primary btn-lg" type="submit" id="enviar">Quero entrar na lista de espera</button>
+          <div id="status" role="alert"></div>
+        </div>
+      </form>
+
+      <div class="success-panel" role="status" aria-live="polite">
+        <div class="callout success"><div><strong>Pronto, seu nome está na lista de espera.</strong>Assim que as inscrições abrirem, eu aviso você por WhatsApp ou e-mail.</div></div>
+        <p class="hint">Quer falar comigo antes? Chame no <a href="https://wa.me/5519981688086?text=Ol%C3%A1%2C%20Prof.%20Marcelo!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20curso%20Terapia%20Manual%20Moderna." target="_blank" rel="noopener">WhatsApp (19) 98168-8086</a> ou acompanhe os conteúdos no Instagram <a href="https://instagram.com/marcelofurlanfisio" target="_blank" rel="noopener">@marcelofurlanfisio</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12. PERGUNTAS -->
+<section class="sec alt" id="perguntas">
+  <div class="wrap narrow">
+    <div class="sec-head">
+      <div class="eyebrow">Dúvidas</div>
+      <h2>Perguntas frequentes</h2>
+      <div class="rule" aria-hidden="true"></div>
+    </div>
+    <div class="faq">
+      <details open><summary>Preciso fazer os dois módulos?</summary><p>Não. Você pode fazer só um. Os dois juntos cobrem o corpo inteiro, e no combo o valor sai menor.</p></details>
+      <details><summary>Existe uma ordem para fazer os módulos?</summary><p data-cfg="preRequisito" data-ph="[Explique se há pré-requisito ou se os módulos podem ser feitos em qualquer ordem]"></p></details>
+      <details><summary>Sou estudante. Vou conseguir acompanhar?</summary><p>Sim. O conteúdo começa pela anatomia, no laboratório, e pelo raciocínio clínico, e a prática é acompanhada de perto durante todo o curso.</p></details>
+      <details><summary>As técnicas são seguras para o paciente?</summary><p>Sim. O curso prioriza técnicas confortáveis e ensina critérios claros para saber quando não tratar e quando encaminhar.</p></details>
+      <details><summary>Vou conseguir aplicar logo depois do curso?</summary><p>Essa é a ideia. Você pratica a maior parte do tempo, com técnicas fáceis de levar para a clínica na segunda-feira seguinte.</p></details>
+      <details><summary>Já fiz outro curso de terapia manual. Vale a pena?</summary><p>Vale, principalmente se você saiu do outro curso sabendo várias técnicas, mas sem um critério claro para escolher entre elas. Aqui a técnica vem junto com o raciocínio clínico.</p></details>
+      <details><summary>Posso parcelar?</summary><p>Sim. No cartão de crédito, em até 4x. No PIX, com desconto, em até 3x, com a última parcela até a data do curso. O combo sai por R$&nbsp;<span data-cfg="valorCombo"></span> no cartão ou R$&nbsp;<span data-cfg="pixCombo"></span> no PIX. O módulo avulso sai por R$&nbsp;<span data-cfg="valorModulo"></span> no cartão ou R$&nbsp;<span data-cfg="pixModulo"></span> no PIX.</p></details>
+      <details><summary>Tem certificado?</summary><p>Sim. Você recebe um certificado de conclusão de cada módulo.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="register-deep">
+  <div class="wrap">
+    <div class="lockup md">
+      <div class="lockup-name">Prof. Marcelo Furlan</div>
+      <div class="lockup-role">Fisioterapeuta Osteopata D.O.</div>
+    </div>
+    <div class="metaline">
+      <span><a href="https://instagram.com/marcelofurlanfisio" target="_blank" rel="noopener">@marcelofurlanfisio</a></span>
+      <span><a href="mailto:marcelofurlan@yahoo.com.br">marcelofurlan@yahoo.com.br</a></span>
+      <span><a href="https://marcelofurlanfisio.github.io/cadastro/#calendario">Próximas turmas e outros cursos</a></span>
+      <span>Americana · SP</span>
+      <span><a href="#privacidade" data-open-privacy>Privacidade</a></span>
+    </div>
+  </div>
+</footer>
+
+<dialog class="modal" id="privacidade" aria-labelledby="priv-titulo">
+  <div class="modal-body">
+    <button class="modal-close" type="button" data-close aria-label="Fechar">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="eyebrow">Privacidade e LGPD</div>
+    <h2 id="priv-titulo">Como uso seus dados</h2>
+    <p class="intro-p">Este cadastro segue a Lei Geral de Proteção de Dados (Lei nº 13.709/2018). Em resumo, seus dados servem só para eu manter contato com você sobre cursos e conteúdos.</p>
+    <ol class="kpl">
+      <li><span class="n">01</span><div><h3>Quem é o responsável</h3><p>Marcelo Pinese Furlan, fisioterapeuta, pessoa física, com atuação em Americana, SP.</p></div></li>
+      <li><span class="n">02</span><div><h3>Quais dados coleto</h3><p>Nome, e-mail, celular, perfil profissional, cidade, conteúdos de interesse e as respostas opcionais que você preencher, além da data e hora do cadastro.</p></div></li>
+      <li><span class="n">03</span><div><h3>Para que uso</h3><p>Para enviar por e-mail e WhatsApp informações sobre cursos, novas turmas e conteúdos educativos, e para saber quais temas e cidades interessam mais.</p></div></li>
+      <li><span class="n">04</span><div><h3>Base legal</h3><p>O seu consentimento, dado ao marcar a autorização do formulário (art. 7º, inciso I, da LGPD).</p></div></li>
+      <li><span class="n">05</span><div><h3>Onde ficam e quem acessa</h3><p>Em uma planilha no Google Drive, com acesso restrito a mim. Não vendo, não alugo e não compartilho seus dados com terceiros.</p></div></li>
+      <li><span class="n">06</span><div><h3>Por quanto tempo</h3><p>Enquanto você quiser receber as comunicações. Se cancelar, seus dados são apagados.</p></div></li>
+      <li><span class="n">07</span><div><h3>Seus direitos</h3><p>Você pode pedir acesso, correção ou exclusão dos seus dados e cancelar a autorização quando quiser, pelo e-mail <a href="mailto:marcelofurlan@yahoo.com.br">marcelofurlan@yahoo.com.br</a> ou respondendo a qualquer mensagem.</p></div></li>
+    </ol>
+    <div class="modal-foot"><button class="btn btn-primary btn-sm" type="button" data-close>Entendi</button></div>
+  </div>
+</dialog>
+
+<div class="sticky-cta" id="sticky-cta">
+  <div class="info"><b>Terapia Manual Moderna</b><span>2 módulos · Campinas, SP</span></div>
+  <a class="btn btn-primary btn-sm" href="#lista-espera">Garanta a sua vaga</a>
+</div>
+
+<script>
+/* ================== DADOS DA TURMA ==================
+   Tudo o que ficar vazio aparece destacado em amarelo na página. */
+const CONFIG = {
+  curso: "Terapia Manual Moderna",
+  datasColuna: "22 e 23 de maio de 2027",   // Módulo 01
+  datasMembros: "29 e 30 de maio de 2027",  // Módulo 02
+  local: "UniMetrocamp – Campinas, SP",
+  vagas: "",              // opcional. Ex. "22". Vazio = mostra só "Vagas limitadas"
+  valorCombo: "1.180,00",
+  condicaoCartao: "em até 4x no cartão de crédito",
+  pixCombo: "1.080,00",                     // valor no PIX
+  condicaoPix: "com desconto, em até 3x (última parcela até a data do curso)",
+  economiaCombo: "120,00", // em relação a comprar os dois módulos separados
+  valorModulo: "650,00",
+  pixModulo: "600,00",                      // valor no PIX
+  preRequisito: ""        // resposta da pergunta sobre a ordem dos módulos
+};
+
+/* ================== FORMULÁRIO ==================
+   Mesmo endereço do Apps Script da página de cadastro. Os dados vão para a aba
+   "Interessados" da planilha "Cadastro de interessados - Cursos", com a coluna
+   Origem marcada como "Landing Terapia Manual Moderna". */
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzX4aUqD10uUJm1Kk-OYs24IW1_TDJQSPaRskQCjI4vt--mpYRHw47cC9zLp7GCT6jd/exec";
+const VERSAO_TERMO = "v1";
+const CURSO_DA_PAGINA = "Terapia Manual Moderna";
+
+/* ================== FOTOS ==================
+   Coloque as fotos na pasta "fotos" e escreva o nome do arquivo no código da foto. */
+const FOTOS = {
+  "TM-07": {arquivo:"tm-07-professor.jpg", legenda:""}
+};
+
+/* ================== FOTOS DAS TURMAS (carrossel) ==================
+   Coloque as fotos na pasta "fotos" e acrescente uma linha por foto, na ordem em que devem aparecer.
+   Ex. {arquivo:"turma-1.jpg"}
+   Use só fotos com autorização dos alunos. Lista vazia = no site a seção não aparece. */
+const TURMAS = [
+];
+/* No site publicado (github.io) os espaços sem foto somem. Na prévia aparecem os quadros com o código */
+const AO_VIVO = /github\.io$/.test(location.hostname);
+const ESCONDER_FOTOS_VAZIAS = AO_VIVO;
+/* Fotos em grupo só aparecem no site quando o grupo inteiro estiver preenchido, para os cartões ficarem iguais */
+const GRUPOS_DE_FOTOS = [["TM-02","TM-03"], ["TM-04","TM-05","TM-06"]];
+if (AO_VIVO) GRUPOS_DE_FOTOS.forEach(g => { if (!g.every(k => FOTOS[k] && FOTOS[k].arquivo)) g.forEach(k => delete FOTOS[k]); });
+</script>
+<script>
+/* Números que sobem até o valor final quando aparecem na tela */
+(function(){
+  const els = document.querySelectorAll('[data-count]');
+  if (!els.length || !('IntersectionObserver' in window)) return;
+  els.forEach(el => el.textContent = (el.dataset.prefix || '') + '0');
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    io.unobserve(e.target);
+    const el = e.target, fim = Number(el.dataset.count), pre = el.dataset.prefix || '', dur = 2200, t0 = performance.now();
+    (function passo(t){
+      const k = Math.min(1, (t - t0) / dur), v = Math.round(fim * (1 - Math.pow(1 - k, 2)));
+      el.textContent = pre + v;
+      if (k < 1) requestAnimationFrame(passo);
+    })(t0);
+  }), {threshold: 0.3});
+  els.forEach(el => io.observe(el));
+})();
+
+/* Pop-up de privacidade */
+(function(){
+  const modal = document.getElementById('privacidade');
+  document.querySelectorAll('[data-open-privacy]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); modal.showModal(); }));
+  document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => b.closest('dialog').close()));
+  modal.addEventListener('click', e => { if (e.target === modal) modal.close(); });
+})();
+
+/* Formulário da lista de espera */
+(function(){
+  const form = document.getElementById('form');
+  const card = document.getElementById('lista-espera');
+  const btn = document.getElementById('enviar');
+  const status = document.getElementById('status');
+  const textoBotao = btn.textContent;
+
+  const cel = document.getElementById('celular');
+  cel.addEventListener('input', () => {
+    let d = cel.value.replace(/\D/g,'').slice(0,11), out = d;
+    if (d.length > 2) out = '(' + d.slice(0,2) + ') ' + d.slice(2);
+    if (d.length > 6) out = '(' + d.slice(0,2) + ') ' + (d.length === 11 ? d.slice(2,7) + '-' + d.slice(7) : d.slice(2,6) + '-' + d.slice(6));
+    cel.value = out;
+  });
+
+  const rules = {
+    nome: v => v.trim().split(/\s+/).length >= 2,
+    email: v => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()),
+    celular: v => { const d = v.replace(/\D/g,''); return d.length === 10 || d.length === 11; },
+    perfil: v => v !== '',
+    cidade: v => v.trim().length >= 2,
+    uf: v => v !== ''
+  };
+  function setInvalid(name, bad){
+    const box = form.querySelector('[data-field="'+name+'"]');
+    if (box) box.classList.toggle('invalid', bad);
+    return !bad;
+  }
+  function validate(){
+    let ok = true, first = null;
+    for (const [name, test] of Object.entries(rules)){
+      const el = form.elements[name];
+      const valid = setInvalid(name, !test(el.value));
+      el.setAttribute('aria-invalid', String(!valid));
+      if (!valid){ ok = false; first = first || el; }
+    }
+    if (!setInvalid('consentimento', !form.elements.consentimento.checked)){ ok = false; first = first || form.elements.consentimento; }
+    if (first) first.focus();
+    return ok;
+  }
+  form.addEventListener('input', e => {
+    const box = e.target.closest('[data-field]');
+    if (box && box.classList.contains('invalid')) box.classList.remove('invalid');
+  });
+  function origem(){
+    const p = new URLSearchParams(location.search);
+    const utm = ['utm_source','utm_medium','utm_campaign'].map(k => p.get(k)).filter(Boolean).join(' / ');
+    return 'Landing Terapia Manual Moderna' + (utm ? ' · ' + utm : '');
+  }
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    status.innerHTML = '';
+    if (form.elements.website.value) return;
+    if (!validate()) return;
+
+    const data = new URLSearchParams();
+    ['nome','email','celular','perfil','cidade','uf','como_conheceu','sugestoes'].forEach(k => data.append(k, form.elements[k].value.trim()));
+    data.append('interesses', CURSO_DA_PAGINA + ' (lista de espera)');
+    form.querySelectorAll('input[name="interesses"]:checked').forEach(i => data.append('interesses', i.value));
+    data.append('consentimento', 'sim');
+    data.append('versao_termo', VERSAO_TERMO);
+    data.append('origem', origem());
+
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+    try {
+      const r = await fetch(SCRIPT_URL, {method:'POST', body:data});
+      const j = await r.json().catch(() => ({ok:r.ok}));
+      if (!j.ok) throw new Error(j.erro || 'falha');
+      card.classList.add('done');
+      card.scrollIntoView({behavior:'smooth', block:'start'});
+    } catch(err){
+      status.innerHTML = '<div class="callout danger"><div><strong>Não consegui enviar seus dados.</strong>Confira sua conexão e tente de novo. Se continuar, me chame no WhatsApp (19) 98168-8086.</div></div>';
+    } finally {
+      btn.disabled = false;
+      btn.textContent = textoBotao;
+    }
+  });
+})();
+</script>
+<script>
+(function(){
+  const C = (typeof CONFIG !== 'undefined') ? CONFIG : {};
+  const vazio = v => v === undefined || v === null || String(v).trim() === '';
+
+  /* Preenche os dados da turma em todos os lugares da página */
+  document.querySelectorAll('[data-cfg]').forEach(el => {
+    const k = el.dataset.cfg;
+    if (!vazio(C[k])) { el.textContent = C[k]; el.classList.remove('todo'); }
+    else { el.textContent = el.dataset.ph || '[' + k + ']'; el.classList.add('todo'); }
+  });
+  document.querySelectorAll('[data-if]').forEach(el => { if (vazio(C[el.dataset.if])) el.hidden = true; });
+  document.querySelectorAll('[data-ifnot]').forEach(el => { if (!vazio(C[el.dataset.ifnot])) el.hidden = true; });
+
+  /* Botões de inscrição: link de inscrição, ou WhatsApp, ou rolam até o investimento */
+  const temLink = !vazio(C.linkInscricao), temZap = !vazio(C.whatsapp);
+  if (!temLink && !temZap) document.body.classList.add('no-link');
+  document.querySelectorAll('[data-cta]').forEach(a => {
+    if (temLink) { a.href = C.linkInscricao; }
+    else if (temZap) {
+      const plano = a.dataset.cta ? ' (' + a.dataset.cta + ')' : '';
+      const msg = 'Olá, Marcelo! Quero garantir minha vaga no curso ' + (C.curso || '') + plano + '.';
+      a.href = 'https://wa.me/' + String(C.whatsapp).replace(/\D/g, '') + '?text=' + encodeURIComponent(msg);
+    } else { a.href = '#investimento'; return; }
+    a.target = '_blank'; a.rel = 'noopener';
+  });
+
+  /* Espaços para fotos */
+  const F = (typeof FOTOS !== 'undefined') ? FOTOS : {};
+  document.querySelectorAll('figure[data-foto]').forEach(fig => {
+    const cod = fig.dataset.foto, f = F[cod];
+    if (fig.dataset.ar) fig.style.setProperty('--ar', fig.dataset.ar);
+    const ph = document.createElement('div');
+    ph.className = 'ph';
+    ph.innerHTML = '<b>' + cod + '</b><i>' + (fig.dataset.desc || '') + '</i>' + (fig.dataset.ar ? '<small>proporção ' + fig.dataset.ar.replace('/', ':') + '</small>' : '');
+    fig.appendChild(ph);
+    if (!(f && f.arquivo) && typeof ESCONDER_FOTOS_VAZIAS !== 'undefined' && ESCONDER_FOTOS_VAZIAS) { fig.remove(); return; }
+    if (f && f.arquivo) {
+      const img = new Image();
+      img.src = 'fotos/' + f.arquivo; img.alt = f.legenda || fig.dataset.desc || ''; img.loading = 'lazy';
+      img.onload = () => fig.classList.add('filled');
+      fig.prepend(img);
+      if (f.legenda) { const c = document.createElement('figcaption'); c.textContent = f.legenda; fig.appendChild(c); }
+    }
+  });
+
+  /* Depoimentos */
+  const lista = document.getElementById('depo-list'), D = (typeof DEPOIMENTOS !== 'undefined') ? DEPOIMENTOS : [];
+  if (lista) {
+    if (!D.length) { const s = document.getElementById('depoimentos'); if (s) s.hidden = true; }
+    D.forEach((d, i) => {
+      const el = document.createElement('article');
+      el.className = 'quote';
+      const t = vazio(d.texto) ? '<span class="todo">[Depoimento real de um aluno, de 2 a 4 linhas]</span>' : d.texto;
+      const n = vazio(d.nome) ? '<span class="todo">[Nome do aluno]</span>' : d.nome;
+      const inf = vazio(d.info) ? '<span class="todo">[Fisioterapeuta, cidade]</span>' : d.info;
+      el.innerHTML = '<blockquote></blockquote><div class="who"><figure class="foto" data-foto-depo></figure><div><b></b><span></span></div></div>';
+      el.querySelector('blockquote').innerHTML = t;
+      el.querySelector('.who > div > b').innerHTML = n;
+      el.querySelector('.who > div > span').innerHTML = inf;
+      const fig = el.querySelector('figure');
+      if (d.foto) { const img = new Image(); img.src = 'fotos/' + d.foto; img.alt = ''; fig.appendChild(img); fig.classList.add('filled'); }
+      else { fig.innerHTML = '<div class="ph"><b>D' + (i + 1) + '</b></div>'; }
+      lista.appendChild(el);
+    });
+  }
+
+  /* Barra superior e barra fixa de inscrição */
+  const topbar = document.getElementById('topbar');
+  const hero = document.querySelector('.hero');
+  const sticky = document.getElementById('sticky-cta');
+  const alvos = [...document.querySelectorAll('#investimento, .final')];
+  const visiveis = new Set();
+  function atualiza(){
+    topbar.classList.toggle('scrolled', scrollY > 8);
+    if (!sticky || !hero) return;
+    const passouHero = hero.getBoundingClientRect().bottom < 0;
+    sticky.classList.toggle('show', passouHero && visiveis.size === 0);
+  }
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(es => { es.forEach(e => e.isIntersecting ? visiveis.add(e.target) : visiveis.delete(e.target)); atualiza(); }, {threshold: 0.15});
+    alvos.forEach(a => io.observe(a));
+  }
+  addEventListener('scroll', atualiza, {passive: true});
+  atualiza();
+})();
+
+</script>
+<script>
+/* Carrossel das turmas */
+(function(){
+  const secao = document.getElementById('turmas'), track = document.getElementById('car-track');
+  if (!secao || !track) return;
+  const dots = document.getElementById('car-dots'), prev = document.getElementById('car-prev'), next = document.getElementById('car-next');
+  const lista = (typeof TURMAS !== 'undefined' ? TURMAS : []).filter(t => t && t.arquivo);
+  if (!lista.length && AO_VIVO) { secao.hidden = true; return; }
+  const itens = lista.length ? lista : [1,2,3,4].map(n => ({ph:'TM-T' + n}));
+  itens.forEach((t, i) => {
+    const fig = document.createElement('figure');
+    fig.className = 'car-slide';
+    fig.setAttribute('role', 'group');
+    fig.setAttribute('aria-label', (i + 1) + ' de ' + itens.length);
+    const box = document.createElement('div');
+    box.className = 'foto';
+    if (t.arquivo) {
+      const img = new Image();
+      img.src = 'fotos/' + t.arquivo; img.alt = 'Turma reunida com os certificados';
+      img.loading = 'lazy'; img.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover';
+      box.append(img);
+    } else {
+      box.innerHTML = '<div class="ph"><b>' + t.ph + '</b><i>Turma reunida com os certificados</i><small>proporção 3:2</small></div>';
+    }
+    fig.append(box);
+    track.append(fig);
+  });
+  montaCarrossel(track, dots, prev, next);
+})();
+</script>
+</body>
+</html>
