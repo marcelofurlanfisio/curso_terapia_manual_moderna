@@ -381,6 +381,7 @@ footer .metaline a{color:var(--text-link)}
 .hero-photo .foto img{object-position:50% 20%}
 #professor .foto img{object-position:50% 30%}
 .pac-photo img{object-position:50% 45%}
+.foto[data-foto="TM-03"] img{object-position:50% 62%}
 .myths{display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-7)}
 .myths span{font-family:var(--font-display);font-size:clamp(20px,2.4vw,26px);color:var(--c-ink-500);background:var(--surface-card);box-shadow:var(--shadow-xs);border-radius:var(--radius-pill);padding:10px 22px;text-decoration:line-through;text-decoration-color:var(--c-clay-600);text-decoration-thickness:2px}
 .mods.four{grid-template-columns:1fr}
@@ -908,9 +909,9 @@ window.montaCarrossel = function(track, dots, prev, next){
 <style>
 .dep-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--sp-6);margin-top:var(--sp-9)}
 .dep-card{flex:1 1 320px;max-width:380px;margin:0;display:flex;flex-direction:column;gap:var(--sp-6);justify-content:space-between;background:var(--surface-card);border-radius:var(--radius-xl);box-shadow:var(--shadow-sm);padding:var(--sp-7)}
-.dep-text{margin:0;position:relative;padding-top:var(--sp-7)}
-.dep-text::before{content:"\201C";position:absolute;top:-6px;left:-2px;font-family:var(--font-display);font-size:64px;line-height:1;color:var(--text-accent)}
-.dep-text p{margin:0;font-family:var(--font-display);font-size:var(--fs-h3);line-height:1.4;color:var(--text-heading);overflow-wrap:anywhere}
+.dep-text{margin:0;position:relative;padding-top:var(--sp-6)}
+.dep-text::before{content:"\201C";position:absolute;top:-6px;left:-2px;font-family:var(--font-display);font-size:48px;line-height:1;color:var(--text-accent)}
+.dep-text p{margin:0;font-family:var(--font-display);font-size:clamp(16px,1.25vw,18px);line-height:1.5;color:var(--text-heading);overflow-wrap:anywhere}
 .dep-who{display:flex;align-items:center;gap:var(--sp-4)}
 .dep-av{flex:0 0 56px;width:56px;height:56px;border-radius:50%;overflow:hidden;background:var(--c-cream-100);box-shadow:inset 0 0 0 1.5px var(--border-default);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:24px;color:var(--text-muted)}
 .dep-av img{width:100%;height:100%;object-fit:cover;display:block}
@@ -1296,6 +1297,7 @@ const CURSO_DA_PAGINA = "Terapia Manual Moderna";
    Coloque as fotos na pasta "fotos" e escreva o nome do arquivo no código da foto. */
 const FOTOS = {
   "TM-01": {arquivo:"TM-01.JPG", legenda:""},
+  "TM-03": {arquivo:"TM-03.jpg", legenda:""},
   "TM-07": {arquivo:"tm-07-professor.jpg", legenda:""},
   "TM-08": {arquivo:"TM-08.JPG", legenda:""}
 };
