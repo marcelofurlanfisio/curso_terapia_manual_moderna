@@ -1178,15 +1178,15 @@ window.montaCarrossel = function(track, dots, prev, next){
 
         <div class="row city">
           <div class="field" data-field="cidade">
-            <label class="label" for="cidade">Cidade <span class="opt">(obrigatório)</span></label>
-            <input class="input" id="cidade" name="cidade" type="text" autocomplete="address-level2" required maxlength="80">
+            <label class="label" for="cidade">Cidade <span class="opt">(opcional)</span></label>
+            <input class="input" id="cidade" name="cidade" type="text" autocomplete="address-level2" maxlength="80">
             <span class="err">Informe sua cidade.</span>
           </div>
           <div class="field" data-field="uf">
-            <label class="label" for="uf">UF <span class="opt">(obrigatório)</span></label>
-            <select class="input" id="uf" name="uf" required>
+            <label class="label" for="uf">UF <span class="opt">(opcional)</span></label>
+            <select class="input" id="uf" name="uf">
               <option value="">UF</option>
-              <option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MT</option><option>MS</option><option>MG</option><option>PA</option><option>PB</option><option>PR</option><option>PE</option><option>PI</option><option>RJ</option><option>RN</option><option>RS</option><option>RO</option><option>RR</option><option>SC</option><option selected>SP</option><option>SE</option><option>TO</option>
+              <option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MT</option><option>MS</option><option>MG</option><option>PA</option><option>PB</option><option>PR</option><option>PE</option><option>PI</option><option>RJ</option><option>RN</option><option>RS</option><option>RO</option><option>RR</option><option>SC</option><option>SP</option><option>SE</option><option>TO</option>
             </select>
             <span class="err">Escolha a UF.</span>
           </div>
@@ -1438,9 +1438,7 @@ if (AO_VIVO) GRUPOS_DE_FOTOS.forEach(g => { if (!g.every(k => FOTOS[k] && FOTOS[
     nome: v => v.trim().split(/\s+/).length >= 2,
     email: v => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()),
     celular: v => { const d = v.replace(/\D/g,''); return d.length === 10 || d.length === 11; },
-    perfil: v => v !== '',
-    cidade: v => v.trim().length >= 2,
-    uf: v => v !== ''
+    perfil: v => v !== ''
   };
   function setInvalid(name, bad){
     const box = form.querySelector('[data-field="'+name+'"]');
