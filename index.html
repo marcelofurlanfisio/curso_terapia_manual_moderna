@@ -380,7 +380,7 @@ footer .metaline a{color:var(--text-link)}
 #professor .stats div span{font-size:var(--fs-body-sm)}
 .hero-photo .foto img{object-position:50% 20%}
 #professor .foto img{object-position:50% 30%}
-.pac-photo img{object-position:50% 45%}
+.pac-photo img{object-position:50% 50%}
 .foto[data-foto="TM-03"] img{object-position:50% 62%}
 .myths{display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-7)}
 .myths span{font-family:var(--font-display);font-size:clamp(20px,2.4vw,26px);color:var(--c-ink-500);background:var(--surface-card);box-shadow:var(--shadow-xs);border-radius:var(--radius-pill);padding:10px 22px;text-decoration:line-through;text-decoration-color:var(--c-clay-600);text-decoration-thickness:2px}
@@ -916,6 +916,10 @@ window.montaCarrossel = function(track, dots, prev, next){
 .dep-text{margin:0;position:relative;padding-top:var(--sp-6)}
 .dep-text::before{content:"\201C";position:absolute;top:-6px;left:-2px;font-family:var(--font-display);font-size:48px;line-height:1;color:var(--text-accent)}
 .dep-text p{margin:0;font-family:var(--font-display);font-size:clamp(16px,1.25vw,18px);line-height:1.5;color:var(--text-heading);overflow-wrap:anywhere}
+/* Depoimento longo mostra 7 linhas com reticências e o botão Ler mais */
+.dep-text p.dep-corte{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:7;line-clamp:7;overflow:hidden}
+.dep-mais{display:inline-block;margin-top:var(--sp-3);padding:0;border:0;background:none;font-family:var(--font-ui);font-size:var(--fs-label);font-weight:600;color:var(--text-accent);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.dep-mais[hidden]{display:none}
 .dep-who{display:flex;align-items:center;gap:var(--sp-4)}
 .dep-av{flex:0 0 56px;width:56px;height:56px;border-radius:50%;overflow:hidden;background:var(--c-cream-100);box-shadow:inset 0 0 0 1.5px var(--border-default);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:24px;color:var(--text-muted)}
 .dep-av img{width:100%;height:100%;object-fit:cover;display:block}
@@ -975,7 +979,16 @@ window.montaCarrossel = function(track, dots, prev, next){
     q.className = 'dep-text';
     const p = document.createElement('p');
     p.textContent = d.comentario;           // sempre como texto, nunca como HTML
-    q.append(p);
+    p.className = 'dep-corte';
+    const mais = document.createElement('button');
+    mais.type = 'button'; mais.className = 'dep-mais'; mais.textContent = 'Ler mais'; mais.hidden = true;
+    mais.setAttribute('aria-expanded', 'false');
+    mais.addEventListener('click', () => {
+      const aberto = p.classList.toggle('dep-corte') === false;
+      mais.textContent = aberto ? 'Ler menos' : 'Ler mais';
+      mais.setAttribute('aria-expanded', String(aberto));
+    });
+    q.append(p, mais);
 
     const quem = document.createElement('figcaption');
     quem.className = 'dep-who';
@@ -1025,9 +1038,20 @@ window.montaCarrossel = function(track, dots, prev, next){
     });
     mostra();
   }
+  /* Mostra o Ler mais só nos depoimentos que passam de 7 linhas */
+  function confereCortes(){
+    grade.querySelectorAll('.dep-card').forEach(c => {
+      const p = c.querySelector('.dep-text p'), b = c.querySelector('.dep-mais');
+      if (!p || !b || !p.classList.contains('dep-corte')) return;
+      b.hidden = !(p.scrollHeight > p.clientHeight + 2);
+    });
+  }
   function mostra(){
     secao.hidden = false;
     montaCarrossel(grade, document.getElementById('dep-dots'), document.getElementById('dep-prev'), document.getElementById('dep-next'));
+    requestAnimationFrame(confereCortes);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(confereCortes);
+    let t; window.addEventListener('resize', () => { clearTimeout(t); t = setTimeout(confereCortes, 150); });
   }
 
   Promise.all(CURSOS.map(c => fetch(API + '?curso=' + encodeURIComponent(c)).then(r => r.json()).catch(() => null)))
