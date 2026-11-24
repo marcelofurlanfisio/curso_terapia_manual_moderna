@@ -609,9 +609,14 @@ dialog{border:0;padding:0;color:var(--c-ink-700)}
 .pac-photo{align-self:start}
 /* Desktop: a foto começa na altura do título e termina antes da frase em negrito */
 @media (min-width:960px){
-  .pac-grid{grid-template-areas:"eye ." "h2 photo" "list photo" "sub ." "quote quote"}
+  .pac-grid{grid-template-areas:"eye ." "h2 photo" "list photo" "sub sub" "quote quote"}
   .pac-photo{align-self:stretch;aspect-ratio:auto;min-height:320px;margin-top:var(--sp-3)}
+  /* Frase em duas linhas, a segunda vai até a borda direita da foto */
+  .pac-sub{container-type:inline-size}
+  .pac-h3{max-width:none;font-size:5.47cqw;line-height:1.12}
+  .pac-h3-l2{white-space:nowrap}
 }
+.pac-h3 > span{display:block}
 .dep-card .todo{font-size:inherit}
 
 /* Depoimentos em carrossel */
@@ -699,7 +704,7 @@ dialog{border:0;padding:0;color:var(--c-ink-700)}
     <figure class="foto pac-photo" data-foto="TM-08" data-ar="4/3" data-desc="Você em aula, explicando para a turma"></figure>
     <div class="pac-sub">
       <div class="rule" aria-hidden="true"></div>
-      <h3 class="pac-h3">Não falta técnica. Falta saber qual usar, em quem e quando.</h3>
+      <h3 class="pac-h3"><span>Não falta técnica.</span> <span class="pac-h3-l2">Falta saber qual usar, em quem e quando.</span></h3>
       <p class="truth-p">O que separa quem repete protocolos de quem resolve casos difíceis não é uma técnica secreta. É o raciocínio por trás de cada decisão.</p>
     </div>
     <p class="big-quote truth-quote pac-quote">Aqui você aprende a escolher a técnica certa para cada paciente, na dose certa e no momento certo.</p>
