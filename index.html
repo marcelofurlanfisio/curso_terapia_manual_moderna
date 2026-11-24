@@ -611,9 +611,8 @@ dialog{border:0;padding:0;color:var(--c-ink-700)}
 @media (min-width:960px){
   .pac-grid{grid-template-areas:"eye ." "h2 photo" "list photo" "sub sub" "quote quote"}
   .pac-photo{align-self:stretch;aspect-ratio:auto;min-height:320px;margin-top:var(--sp-3)}
-  /* Frase em duas linhas, a segunda vai até a borda direita da foto */
-  .pac-sub{container-type:inline-size}
-  .pac-h3{max-width:none;font-size:5.47cqw;line-height:1.12}
+  /* Frase em duas linhas, no tamanho original, podendo ocupar a largura toda da seção */
+  .pac-h3{max-width:none}
   .pac-h3-l2{white-space:nowrap}
 }
 .pac-h3 > span{display:block}
