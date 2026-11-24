@@ -1440,6 +1440,8 @@ if (AO_VIVO) GRUPOS_DE_FOTOS.forEach(g => { if (!g.every(k => FOTOS[k] && FOTOS[
   });
   document.querySelectorAll('[data-if]').forEach(el => { if (vazio(C[el.dataset.if])) el.hidden = true; });
   document.querySelectorAll('[data-ifnot]').forEach(el => { if (!vazio(C[el.dataset.ifnot])) el.hidden = true; });
+  /* No site publicado, pergunta sem resposta preenchida não aparece */
+  if (typeof AO_VIVO !== 'undefined' && AO_VIVO) document.querySelectorAll('details').forEach(d => { if (d.querySelector('.todo')) d.hidden = true; });
 
   /* Botões de inscrição: link de inscrição, ou WhatsApp, ou rolam até o investimento */
   const temLink = !vazio(C.linkInscricao), temZap = !vazio(C.whatsapp);
