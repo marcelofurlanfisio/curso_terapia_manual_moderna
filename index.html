@@ -929,8 +929,8 @@ window.montaCarrossel = function(track, dots, prev, next){
 .dep-text{margin:0;position:relative;padding-top:var(--sp-6)}
 .dep-text::before{content:"\201C";position:absolute;top:-6px;left:-2px;font-family:var(--font-display);font-size:48px;line-height:1;color:var(--text-accent)}
 .dep-text p{margin:0;font-family:var(--font-display);font-size:clamp(16px,1.25vw,18px);line-height:1.5;color:var(--text-heading);overflow-wrap:anywhere}
-/* Depoimento longo mostra 7 linhas com reticências e o botão Ler mais */
-.dep-text p.dep-corte{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:7;line-clamp:7;overflow:hidden}
+/* Depoimento longo mostra 4 linhas com reticências e o botão Ler mais */
+.dep-text p.dep-corte{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;line-clamp:4;overflow:hidden}
 .dep-mais{display:inline-block;margin-top:var(--sp-3);padding:0;border:0;background:none;font-family:var(--font-ui);font-size:var(--fs-label);font-weight:600;color:var(--text-accent);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 .dep-mais[hidden]{display:none}
 .dep-who{display:flex;align-items:center;gap:var(--sp-4)}
@@ -1051,7 +1051,7 @@ window.montaCarrossel = function(track, dots, prev, next){
     });
     mostra();
   }
-  /* Mostra o Ler mais só nos depoimentos que passam de 7 linhas */
+  /* Mostra o Ler mais só nos depoimentos que passam de 4 linhas */
   function confereCortes(){
     grade.querySelectorAll('.dep-card').forEach(c => {
       const p = c.querySelector('.dep-text p'), b = c.querySelector('.dep-mais');
