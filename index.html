@@ -96,14 +96,6 @@ strong{color:var(--text-heading);font-weight:600}
 .foto:not(.filled) figcaption{display:none}
 
 /* Barra superior */
-.topbar{position:sticky;top:0;z-index:20;height:64px;display:flex;align-items:center;background:var(--surface-page);border-bottom:var(--bw-hairline) solid #dccdb2;transition:background-color var(--dur-base) var(--ease-standard)}
-.topbar.scrolled{background:rgba(252,249,243,.9);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
-.topbar .wrap{width:100%;display:flex;align-items:center;justify-content:space-between;gap:var(--sp-4)}
-.topbar nav{display:none;gap:var(--sp-6);font-size:var(--fs-label);font-weight:500}
-.topbar nav a{color:var(--text-body);text-decoration:none}
-.topbar nav a:hover{color:var(--text-accent)}
-@media (min-width:1020px){.topbar nav{display:flex}}
-.topbar-right{display:flex;align-items:center;gap:var(--sp-6)}
 
 /* Hero */
 .hero{padding:var(--sp-11) 0 var(--sp-12)}
@@ -624,23 +616,83 @@ dialog{border:0;padding:0;color:var(--c-ink-700)}
 .pix b{display:block;font-family:var(--font-display);font-size:26px;font-weight:600;line-height:1.1;color:var(--c-success-700)}
 .pix > div > span{display:block;font-size:var(--fs-label);line-height:1.35;margin-top:2px}
 .plan .s + .pix{margin-top:var(--sp-3)}
+
+/* cabeçalho padronizado (igual à página cursos) */
+.topbar{position:sticky;top:0;z-index:20;background:var(--surface-page);border-bottom:1px solid var(--border-hairline);transition:background-color .25s ease,box-shadow .25s ease}
+.topbar.is-scrolled{background:rgba(252,249,243,.85);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.topbar .wrap{display:flex;align-items:center;height:64px;gap:var(--sp-6)}
+.topnav{display:flex;align-items:center;gap:var(--sp-5);margin-left:auto}
+.topnav a{font-family:var(--font-ui);font-size:15px;font-weight:500;color:var(--text-heading);text-decoration:none}
+.topnav a:hover{color:var(--text-accent)}
+.topbar-cta{flex-shrink:0}
+.menu-toggle{display:none;width:44px;height:44px;padding:0;border:0;background:transparent;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:5px;margin-left:auto}
+.menu-toggle span{display:block;width:22px;height:2px;background:var(--text-heading);transition:transform var(--dur-fast) var(--ease-standard),opacity var(--dur-fast) var(--ease-standard)}
+.topbar.is-open .menu-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.topbar.is-open .menu-toggle span:nth-child(2){opacity:0}
+.topbar.is-open .menu-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media (min-width:768px) and (max-width:1019px){
+  .topbar .wrap{flex-wrap:wrap;height:auto;padding-top:12px;padding-bottom:12px;row-gap:12px}
+  .topnav{order:3;width:100%;margin-left:0;gap:var(--sp-6)}
+  .topbar-cta{margin-left:auto}
+}
+@media (max-width:767px){
+  .topbar .wrap{flex-wrap:wrap;height:auto;padding-top:12px;padding-bottom:12px;row-gap:12px}
+  .menu-toggle{display:flex;order:1}
+  .topbar-cta{order:2;width:100%;margin-left:0;justify-content:center}
+  .topnav{display:none;order:3;width:100%;margin-left:0;flex-direction:column;align-items:flex-start;gap:var(--sp-4);padding-top:var(--sp-4);border-top:1px solid var(--border-hairline)}
+  .topbar.is-open .topnav{display:flex}
+}
+.topbar .wrap{padding-left:var(--page-margin);padding-right:var(--page-margin)}
+.lockup{display:block;text-decoration:none}
+.lockup-name,.lockup-role{display:block}
+.lockup-name{font-family:var(--font-display);font-weight:500;letter-spacing:var(--ls-display);line-height:1.02;color:var(--text-heading)}
+.lockup-role{font-weight:600;letter-spacing:var(--ls-eyebrow);text-transform:uppercase;color:var(--text-accent)}
+.lockup.sm .lockup-name{font-size:19px}.lockup.sm .lockup-role{font-size:9px;margin-top:5px}
+.lockup.md .lockup-name{font-size:28px}.lockup.md .lockup-role{font-size:11px;margin-top:7px}
 </style>
 </head>
 <body>
 
 <header class="topbar" id="topbar">
   <div class="wrap">
-    <a href="https://marcelofurlanfisio.github.io/cursos/#inicio" style="text-decoration:none">
-    <div class="lockup sm" aria-label="Prof. Marcelo Furlan, fisioterapeuta osteopata D.O.">
-      <div class="lockup-name">Prof. Marcelo Furlan</div>
-      <div class="lockup-role">Fisioterapeuta Osteopata D.O.</div>
-    </div>
-    </a>
-    <div class="topbar-right">
-      <a class="btn btn-primary btn-sm" href="#lista-espera">Garanta a sua vaga</a>
-    </div>
+    <a class="lockup sm" href="/cursos/#inicio" aria-label="Prof. Marcelo Furlan, fisioterapeuta osteopata D.O."><span class="lockup-name">Prof. Marcelo Furlan</span><span class="lockup-role">Fisioterapeuta Osteopata D.O.</span></a>
+    <nav class="topnav" id="topnav" aria-label="Principal">
+      <a href="/cursos/#inicio">Início</a>
+      <a href="/cursos/sobre.html">Sobre</a>
+      <a href="/cursos/#cursos">Cursos</a>
+    </nav>
+    <a class="btn btn-primary btn-sm topbar-cta" href="/cadastro/#calendario">Próximas turmas</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="topnav" aria-label="Abrir menu"><span></span><span></span><span></span></button>
   </div>
 </header>
+<script>
+(function(){
+  var header = document.getElementById('topbar');
+  var toggle = header.querySelector('.menu-toggle');
+  function setOpen(aberto){
+    header.classList.toggle('is-open', aberto);
+    toggle.setAttribute('aria-expanded', String(aberto));
+    toggle.setAttribute('aria-label', aberto ? 'Fechar menu' : 'Abrir menu');
+  }
+  toggle.addEventListener('click', function(){
+    setOpen(!header.classList.contains('is-open'));
+  });
+  document.getElementById('topnav').addEventListener('click', function(e){
+    if (e.target.closest('a')) setOpen(false);
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && header.classList.contains('is-open')){
+      setOpen(false);
+      toggle.focus();
+    }
+  });
+  function onScroll(){
+    header.classList.toggle('is-scrolled', window.scrollY > 8);
+  }
+  window.addEventListener('scroll', onScroll, {passive: true});
+  onScroll();
+})();
+</script>
 
 <main>
 
@@ -1249,15 +1301,17 @@ window.montaCarrossel = function(track, dots, prev, next){
 
 <footer class="register-deep">
   <div class="wrap">
-    <div class="lockup md">
-      <div class="lockup-name">Prof. Marcelo Furlan</div>
-      <div class="lockup-role">Fisioterapeuta Osteopata D.O.</div>
-    </div>
+    <div class="lockup sm"><div class="lockup-name">Prof. Marcelo Furlan</div><div class="lockup-role">Fisioterapeuta Osteopata D.O.</div></div>
+    <nav class="metaline" aria-label="Rodapé">
+      <span><a href="/cursos/#inicio">Início</a></span>
+      <span><a href="/cursos/sobre.html">Sobre</a></span>
+      <span><a href="/cursos/#cursos">Cursos</a></span>
+      <span><a href="/cadastro/#calendario">Próximas turmas</a></span>
+      <span><a href="/cursos/privacidade.html">Privacidade e LGPD</a></span>
+    </nav>
     <div class="metaline">
       <span><a href="https://instagram.com/marcelofurlanfisio" target="_blank" rel="noopener">@marcelofurlanfisio</a></span>
       <span><a href="mailto:marcelofurlan@yahoo.com.br">marcelofurlan@yahoo.com.br</a></span>
-      <span><a href="https://marcelofurlanfisio.github.io/cadastro/#calendario">Próximas turmas e outros cursos</a></span>
-      <span><a href="#privacidade" data-open-privacy>Privacidade</a></span>
     </div>
   </div>
 </footer>
