@@ -42,7 +42,6 @@ a:hover{color:var(--text-link-hover);text-decoration-thickness:2px}
 :focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
 strong{color:var(--text-heading);font-weight:600}
 .wrap{max-width:1200px;margin:0 auto;padding:0 var(--page-margin)}
-@media (min-width:900px){.wrap{padding:0 var(--page-margin-lg)}}
 .narrow{max-width:760px}
 
 /* Componentes do sistema */
@@ -266,7 +265,7 @@ strong{color:var(--text-heading);font-weight:600}
 .lotes li span:last-child{font-family:var(--font-data)}
 .plans{display:grid;gap:var(--sp-4);margin-top:var(--sp-5)}
 .plan{border-radius:var(--radius-lg);padding:var(--sp-5);box-shadow:inset 0 0 0 1.5px var(--c-cream-200);position:relative}
-.plan.best{box-shadow:inset 0 0 0 2px var(--c-clay-600);background:#fff}
+.plan.best{box-shadow:inset 0 0 0 2px var(--c-clay-600);background:var(--c-white)}
 .plan .flag{position:absolute;top:-11px;right:16px;font-size:var(--fs-micro);font-weight:600;letter-spacing:var(--ls-eyebrow);text-transform:uppercase;background:var(--c-clay-600);color:var(--c-cream-50);padding:4px 9px;border-radius:var(--radius-sm)}
 .plan h3{font-family:var(--font-ui);font-size:var(--fs-body);font-weight:600;letter-spacing:0}
 .plan .p{font-family:var(--font-display);font-size:34px;font-weight:500;color:var(--c-navy-900);line-height:1.05;margin-top:var(--sp-2)}
@@ -612,7 +611,7 @@ dialog{border:0;padding:0;color:var(--c-ink-700)}
 
 /* Valor no PIX em destaque */
 .pix{display:flex;align-items:center;gap:var(--sp-3);margin-top:var(--sp-3);padding:var(--sp-3) var(--sp-4);border-radius:var(--radius-md);background:var(--c-success-100);color:var(--c-success-700)}
-.pix-tag{flex:0 0 auto;font-size:var(--fs-micro);font-weight:700;letter-spacing:.08em;background:var(--c-success);color:#fff;padding:4px 8px;border-radius:var(--radius-sm)}
+.pix-tag{flex:0 0 auto;font-size:var(--fs-micro);font-weight:700;letter-spacing:.08em;background:var(--c-success);color:var(--c-white);padding:4px 8px;border-radius:var(--radius-sm)}
 .pix b{display:block;font-family:var(--font-display);font-size:26px;font-weight:600;line-height:1.1;color:var(--c-success-700)}
 .pix > div > span{display:block;font-size:var(--fs-label);line-height:1.35;margin-top:2px}
 .plan .s + .pix{margin-top:var(--sp-3)}
@@ -734,7 +733,7 @@ footer .metaline span+span::before{content:"·";margin-right:var(--sp-2)}
 <div class="wrap">
   <ul class="highlights">
     <li><span class="hi-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 11V6a2 2 0 0 0-4 0v5"/><path d="M14 10V4a2 2 0 0 0-4 0v6"/><path d="M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg></span><div><b>Hands On</b><span>a maior parte do curso é prática na maca</span></div></li>
-    <li><span class="hi-ic"><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><g transform="rotate(-36 12 12)" stroke-linecap="round"><path d="M4.6 12H0.4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M19 11.3L23.4 9.3" stroke="currentColor" stroke-width="1.7" fill="none"/><path d="M19 12.7L23.6 13.7" stroke="currentColor" stroke-width="1.7" fill="none"/><path d="M3.8 12C6.8 4.8 15.2 4.6 19.8 11.2L19.8 12.8C15.2 19.4 6.8 19.2 3.8 12Z" fill="currentColor"/><path d="M5.4 12C9 8.4 14.6 8.1 19.4 11.4M5.4 12C9.6 10.7 14.6 10.9 19.4 12M5.4 12C9 15.6 14.6 15.9 19.4 12.6" stroke="#F4E0D4" stroke-width=".75" fill="none"/></g></svg></span><div><b>Anatomia em peças reais</b><span>revisão no laboratório da UniMetrocamp</span></div></li>
+    <li><span class="hi-ic"><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><g transform="rotate(-36 12 12)" stroke-linecap="round"><path d="M4.6 12H0.4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M19 11.3L23.4 9.3" stroke="currentColor" stroke-width="1.7" fill="none"/><path d="M19 12.7L23.6 13.7" stroke="currentColor" stroke-width="1.7" fill="none"/><path d="M3.8 12C6.8 4.8 15.2 4.6 19.8 11.2L19.8 12.8C15.2 19.4 6.8 19.2 3.8 12Z" fill="currentColor"/><path d="M5.4 12C9 8.4 14.6 8.1 19.4 11.4M5.4 12C9.6 10.7 14.6 10.9 19.4 12M5.4 12C9 15.6 14.6 15.9 19.4 12.6" stroke="var(--c-clay-100)" stroke-width=".75" fill="none"/></g></svg></span><div><b>Anatomia em peças reais</b><span>revisão no laboratório da UniMetrocamp</span></div></li>
     <li><span class="hi-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="4.6" rx="1.6"/><rect x="7" y="9.7" width="10" height="4.6" rx="1.6"/><rect x="7" y="16.9" width="10" height="4.6" rx="1.6"/><path d="M7 4.8H4.2M17 4.8h2.8M7 12H4.2M17 12h2.8M7 19.2H4.2M17 19.2h2.8"/></svg></span><div><b>Técnicas articulares e musculares</b><span>seguras e fáceis de aplicar</span></div></li>
   </ul>
 </div>
